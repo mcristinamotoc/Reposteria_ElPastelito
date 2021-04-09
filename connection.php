@@ -2,7 +2,7 @@
 
 // Conectarse a la base de datos: localhost, nombre de usuario, contraseña, nombre de la base de datos
 
-$mysqli = new mysqli('localhost', 'root', '', 'REPOSTERrIA_ONLINE');
+$mysqli = new mysqli('localhost', 'root', '', 'REPOSTERIA_ONLINE');
 
 if ($mysqli->connect_errno) {
     echo "Fallo al conectarse a MySQL debido a: \n";
