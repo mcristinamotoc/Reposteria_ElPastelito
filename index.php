@@ -50,7 +50,7 @@
                         </div>
                         <div class="card-footer">
                             <a class="btn btn-info"
-                                href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=ismaelkm%40hotmail%2ecom&lc=ES&item_name=<?php echo $row_prod['nombre']; ?>&amount=<?php echo $row_prod['precio']; ?>&currency_code=EUR&button_subtype=services&no_note=0&bn=PP%2dBuyNowBF%3abtn_buynowCC_LG%2egif%3aNonHostedGuest"
+                                href="#"
                                 target="_blank">Comprar</a>
                         </div>
                     </div>
