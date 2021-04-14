@@ -15,7 +15,7 @@
 
  //If the user exists he will be redirected to the Admin Session 
  if($nr == 1){ 
-   header ("Location:admin_session.php"); 
+   header ("Location:admin_area/admin_session.php"); 
  }
 
  //If the user or password is incorrect, error message
