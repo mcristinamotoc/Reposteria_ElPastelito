@@ -95,56 +95,51 @@
                                             <span aria-hidden="true">&times;</span></button>
                                     </div>
                                     <!--Register Form -->
-                                    <form action="index.php" method="GET" id="registerForm"
+                                    <form action="register.php" method="post" id="registerForm"
                                         onsubmit="return registerValidation()">
                                         <div class="modal-body mx-3">
-
                                             <div class="md-form mb-4">
                                                 <label for="name">Nombre Completo</label>
-                                                <input type="name" id="nameRegister" class="form-control validate"
-                                                    aria-required="true" pattern="^[a-zA-Z ]*$" required>
+                                                <input type="name" id="nameRegister" name="name"
+                                                    class="form-control validate" aria-required="true"
+                                                    pattern="^[a-zA-Z ]*$" required>
                                                 <div class="invalid-feedback" id="errorNameRegister"></div>
                                             </div>
-
                                             <div class="md-form mb-4">
                                                 <label for="email">Email</label>
-                                                <input type="email" id="emailRegister" class="form-control validate"
-                                                    aria-required="true" required>
+                                                <input type="email" id="emailRegister" name="emailRegister"
+                                                    class="form-control validate" aria-required="true" required>
                                                 <div class="invalid-feedback" id="errorEmailRegister"></div>
                                             </div>
-
                                             <div class="md-form mb-4">
                                                 <label for="password">Contraseña</label>
-                                                <input type="password" id="passwordRegister"
+                                                <input type="password" id="passwordRegister" name="passwordRegister"
                                                     class="form-control validate" aria-required="true" required>
                                                 <div class="invalid-feedback" id="errorPasswordRegister">
                                                 </div>
                                             </div>
-
                                             <div class="md-form mb-4">
                                                 <label for="password2">Repite Contraseña</label>
-                                                <input type="password" id="password2" class="form-control validate"
-                                                    aria-required="true" required>
+                                                <input type="password" id="password2" name="passwordRegister2"
+                                                    class="form-control validate" aria-required="true" required>
                                                 <div class="invalid-feedback" id="errorPassword2"></div>
                                             </div>
-
                                             <div class="md-form mb-4">
                                                 <label for="direction">Dirección</label>
-                                                <input type="direction" id="direction" class="form-control validate"
-                                                    aria-required="true" required>
+                                                <input type="direction" id="direction" name="direction"
+                                                    class="form-control validate" aria-required="true" required>
                                                 <div class="invalid-feedback" id="errorDirection"></div>
                                             </div>
-
                                             <div class="md-form mb-4">
                                                 <label for="city">Ciudad</label>
-                                                <input type="city" id="city" class="form-control validate"
+                                                <input type="city" id="city" name="city" class="form-control validate"
                                                     aria-required="true" pattern="^[a-zA-Z ]*$" required>
                                                 <div class="invalid-feedback" id="errorCity"></div>
                                             </div>
-
                                             <div class="md-form mb-4 ">
                                                 <label for="provincia">Provincia</label>
-                                                <select id="provincia" class="form-control validate" required>
+                                                <select id="provincia" name="provincia" class="form-control validate"
+                                                    required>
                                                     <option selected value=""></option>
                                                     <option>Barcelona</option>
                                                     <option>Girona</option>
@@ -155,18 +150,17 @@
                                             </div>
                                             <div class="md-form mb-4">
                                                 <label for="zipCode">Codigo Postal</label>
-                                                <input type="zipCode" id="zipCode" class="form-control validate"
-                                                    aria-required="true" pattern="^\d{5}$" required>
+                                                <input type="zipCode" id="zipCode" name="zipCode"
+                                                    class="form-control validate" aria-required="true" pattern="^\d{5}$"
+                                                    required>
                                                 <div class="invalid-feedback" id="errorZipCode"></div>
                                             </div>
-
                                             <div class="md-form mb-4">
                                                 <label for="phoneRegister">Teléfono de contacto </label>
-                                                <input type="phoneRegister" id="phoneRegister"
+                                                <input type="phoneRegister" id="phoneRegister" name="phoneRegister"
                                                     class="form-control validate" aria-required="true" required>
                                                 <div class="invalid-feedback" id="errorPhoneRegister"></div>
                                             </div>
-
                                             <div class="form-check ">
                                                 <input type="checkbox" class="form-check-input" name="terms" id="terms"
                                                     required>
