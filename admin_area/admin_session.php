@@ -3,7 +3,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,24 +10,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>LIST CUSTOMERS</title>
+    <title>LIST categoriaS</title>
 </head>
-
 <body>
 
 <!-- Admin options to edit product categories  -->
+
    <!-- Title Category -->
    <div class="jumbotron text-center p-3 my-3 mx-5 border">
         <h2 class="text-info">Listado Categorias</h2>
     </div>
 
     <!-- The button connects with the form to create a new category-->
-    <form role="form" method="post" action="form_product.php">
-        <input type="hidden" name="action" value="new">
+    <form role="form" method="post" action="admin_category.php">
+        <input name="action" type="hidden" value="New">
         <button name="id" type="submit" class="btn btn-info mx-5 mb-4">Nueva Categoria</button>
     </form>
-
     <?php
+   
     //Connect with database category table
     $result =mysqli_query($mysqli, " SELECT*FROM CATEGORIAS; ");
     //Error control
@@ -39,7 +38,6 @@
         <tr>
             <td class="p-3 border" width="150">ID Categoria</td>
             <td class="p-3 border" width="300">Nombre</td>
-    
         </tr>
     </table>
     <?php
@@ -57,17 +55,16 @@
                 </table>
             <td>
                 <!-- The button connects with the form_product.php to modify a category information-->
-                <form method="post" action="form_product.php">
-                    <input name="id" type="hidden" value="<?php echo $row ['ID']?>">
-                    <button name="action" value="modify" type="submit" class="btn btn-info my-1">Modificar </button>
-
+                <form method="post" action="admin_category.php">
+                    <input name="id" type="hidden" value="<?php echo $row ['ID_CATEGORIA']?>">
+                    <button name="action" value="Modify" type="submit" class="btn btn-info my-1">Modificar </button>
                 </form>
             </td>
             <!-- The button connects with the form_product.php to delete a category -->
             <td>
-                <form method="post" action="form_customer.php">
-                    <input name="id" type="hidden" value="<?php echo $row ['ID']?>">
-                    <button name="action" value="delete" type="submit" class="btn btn-info my-1 mx-1">Borrar</button>
+                <form method="post" action="admin_category.php">
+                    <input name="id" type="hidden" value="<?php echo $row ['ID_CATEGORIA']?>">
+                    <button name="action" value="Delete" type="submit" class="btn btn-info my-1 mx-1">Borrar</button>
                 </form>
             </td>
         </tr>
@@ -78,14 +75,15 @@
 ?>
 
 <!-- Admin options to edit products list  -->
+
     <!-- Title  Products-->
     <div class="jumbotron text-center p-3 my-3 mx-5 border">
         <h2 class="text-info">Listado Productos</h2>
     </div>
 
     <!-- The button connects with the form to create a new product.-->
-    <form role="form" method="post" action="form_product.php">
-        <input type="hidden" name="action" value="new">
+    <form role="form" method="post" action="admin_products.php">
+        <input type="hidden" name="action" value="New">
         <button name="id" type="submit" class="btn btn-info mx-5 mb-4">Nuevo Producto</button>
     </form>
 
@@ -122,17 +120,17 @@
                     </tr>
                 </table>
             <td>
-                <!-- The button connects with the form_product.php to modify a product information-->
-                <form method="post" action="form_product.php">
-                    <input name="id" type="hidden" value="<?php echo $row ['ID']?>">
-                    <button name="action" value="modify" type="submit" class="btn btn-info my-1">Modificar </button>
+                <!-- The button connects with the admin_products.php to modify a product information-->
+                <form method="post" action="admin_products.php">
+                    <input name="id" type="hidden" value="<?php echo $row ['ID_PRODUCTO']?>">
+                    <button name="action" value="Modify" type="submit" class="btn btn-info my-1">Modificar </button>
                 </form>
             </td>
-            <!-- The button connects with the form_product.php to delete a product -->
+            <!-- The button connects with the admin_products.php to delete a product -->
             <td>
-                <form method="post" action="form_customer.php">
-                    <input name="id" type="hidden" value="<?php echo $row ['ID']?>">
-                    <button name="action" value="delete" type="submit" class="btn btn-info my-1 mx-1">Borrar</button>
+                <form method="post" action="admin_products.php">
+                    <input name="id" type="hidden" value="<?php echo $row ['ID_PRODUCTO']?>">
+                    <button name="action" value="Delete" type="submit" class="btn btn-info my-1 mx-1">Borrar</button>
                 </form>
             </td>
         </tr>
@@ -152,5 +150,4 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous ">
     </script>
 </body>
-
 </html>
