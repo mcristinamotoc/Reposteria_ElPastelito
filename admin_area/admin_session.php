@@ -27,7 +27,7 @@
         <button name="id" type="submit" class="btn btn-info mx-5 mb-4">Nueva Categoria</button>
     </form>
     <?php
-   
+
     //Connect with database category table
     $result =mysqli_query($mysqli, " SELECT*FROM CATEGORIAS; ");
     //Error control
@@ -74,8 +74,7 @@
 }     
 ?>
 
-<!-- Admin options to edit products list  -->
-
+<!-- Admin options to edit Products List  -->
     <!-- Title  Products-->
     <div class="jumbotron text-center p-3 my-3 mx-5 border">
         <h2 class="text-info">Listado Productos</h2>
@@ -139,7 +138,6 @@
   }
 }      
 ?>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
