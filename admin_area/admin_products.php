@@ -1,5 +1,5 @@
 <!-- Including the Functions categories file -->
-<?php include ("functions_category.php");?>
+<?php include ("functions_products.php");?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,33 +31,31 @@
     <a href="admin_session.php">Back</a>
     <?php exit();
     }?>
-
     <!-- Container -->
     <div class="container" mx-3 my-1>
         <?php
     echo "Action: " .$_POST["action"]."<br>";
-    echo "Id Category: " .$_POST["id"]."<br>";?>
+    echo "Id products: " .$_POST["id"]."<br>";?>
     </div><?php
    
 //Based on the selected action, it calls one function or the other 
 switch($_POST["action"]){
     case "New":
-        createFormCategory();
+        createFormProducts();
     break;
     case "Modify":
-        modifyFormCategory();
+        modifyFormProducts();
     break;
     case "Delete";
-        deleteFormCategory();
+        deleteFormProducts();
 break;
 }
-//Show interface with empty fields to create a new category
-function createFormCategory(){?>
+//Show interface with empty fields to create a new product
+function createFormProducts(){?>
     <div class="container p-3 my-3 border">
-        <div class="text-info mx-5"> Añadir Categoria</div>
-
-        <form action="functions_category.php" method="post">
-            <input type="hidden" name="function_name" value="create_category">
+        <div class="text-info mx-5"> Añadir Producto</div>
+        <form action="functions_products.php" method="post">
+            <input type="hidden" name="function_name" value="create_products">
             <div class="form-group">
                 <label for="id">Id:</label>
                 <input type="text" class="form-control" placeholder="Enter id" name="id">
@@ -66,34 +64,68 @@ function createFormCategory(){?>
                 <label for="name">Nombre:</label>
                 <input type="text" class="form-control" placeholder="Enter name" name="name">
             </div>
-            <button type="submit" class="btn btn-info">Accept</button>
-        </form>
-    </div>
-    <?php
-}
-//Show fields to modify the category.
-function modifyFormCategory(){
-    $category = get_category($_POST['id']);?>
-    <div class="container p-3 my-3 border">
-        <div class="text-info mx-5"> Modify register</div>
-        <form action="functions_category.php" method="post">
-            <input type="hidden" name="function_name" value="modify_category">
-            <input type="hidden" name="id" value="<?php echo $category['ID_CATEGORIA']?>">
             <div class="form-group">
-                <label for="name">Nombre:</label>
-                <input type="text" class="form-control" name="name" value="<?php echo $category['NOMBRE']?>">
+                <label for="description">Descripción:</label>
+                <input type="text" class="form-control" placeholder="Enter description" name="description">
+            </div>
+            <div class="form-group">
+                <label for="price">Precio:</label>
+                <input type="text" class="form-control" placeholder="Enter price" name="price">
+            </div>
+            <div class="form-group">
+                <label for="picture">Url Foto:</label>
+                <input type="text" class="form-control" placeholder="Enter picture" name="picture">
+            </div>
+            <div class="form-group">
+                <label for="category">Categoria ID:</label>
+                <input type="text" class="form-control" placeholder="Enter category" name="category">
             </div>
             <button type="submit" class="btn btn-info">Accept</button>
         </form>
     </div>
     <?php
 }
-//Show fields to delete the category
-function deleteFormCategory(){?>
-    <form action="functions_category.php" method="post">
-        <input type="hidden" name="function_name" value="delete_category">
+//Show fields to modify the product.
+function modifyFormProducts(){
+    $products = get_products($_POST['id']);?>
+    <div class="container p-3 my-3 border">
+        <div class="text-info mx-5"> Modify register</div>
+        <form action="functions_products.php" method="post">
+            <input type="hidden" name="function_name" value="modify_products">
+            <input type="hidden" name="id" value="<?php echo $products['ID_PRODUCTO']?>">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" class="form-control" name="name" value="<?php echo $products['NOMBRE']?>">
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción:</label>
+                <input type="text" class="form-control" name="description"
+                    value="<?php echo $products['DESCRIPCION']?>">
+            </div>
+            <div class="form-group">
+                <label for="price">Precio:</label>
+                <input type="text" class="form-control" name="price" value="<?php echo $products['PRECIO']?>">
+            </div>
+            <div class="form-group">
+                <label for="picture">Url Foto:</label>
+                <input type="text" class="form-control" name="picture" value="<?php echo $products['URL_FOTO']?>">
+            </div>
+            <div class="form-group">
+                <label for="category">Categoria ID:</label>
+                <input type="text" class="form-control" name="category" value="<?php echo $products['CATEGORIA_ID']?>">
+            </div>
+            <button type="submit" class="btn btn-info">Accept</button>
+        </form>
+    </div>
+    <?php
+}
+//Show fields to delete the product
+function deleteFormProducts(){?>
+    <!-- <div class="text-primary mx-5"> Delete register</div> -->
+    <form action="functions_products.php" method="post">
+        <input type="hidden" name="function_name" value="delete_products">
         <input type="hidden" name="id" value="<?php echo $_POST['id']?>">
-        <label class="lead font-weight-bolder text-danger mx-5" for="isDeleteCategory">Delete Category?</label>
+        <label class="lead font-weight-bolder text-danger mx-5" for="isDeleteproducts">Delete products?</label>
         <input class="btn btn-info" type="submit" value="YES">
         <a href="admin_session.php" class="btn btn-info mx-3" role="button">NO</a>
     </form>

@@ -3,6 +3,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>LIST categoriaS</title>
 </head>
+
 <body>
-
-<!-- Admin options to edit product categories  -->
-
-   <!-- Title Category -->
-   <div class="jumbotron text-center p-3 my-3 mx-5 border">
+    <!-- Admin options to edit product categories  -->
+    <!-- Title Category -->
+    <div class="jumbotron text-center p-3 my-3 mx-5 border">
         <h2 class="text-info">Listado Categorias</h2>
     </div>
 
@@ -41,7 +41,6 @@
         </tr>
     </table>
     <?php
-
 // Browse and Show the category records
   while($row=$result->fetch_assoc()){?>
     <table>
@@ -73,8 +72,7 @@
   }
 }     
 ?>
-
-<!-- Admin options to edit Products List  -->
+    <!-- Admin options to edit Products List  -->
     <!-- Title  Products-->
     <div class="jumbotron text-center p-3 my-3 mx-5 border">
         <h2 class="text-info">Listado Productos</h2>
@@ -99,11 +97,10 @@
             <td class="p-3 border" width="200">Descripción</td>
             <td class="p-3 border" width="200">Precio</td>
             <td class="p-3 border" width="200">Foto</td>
-            <td class="p-3 border" width="150">Categoria Producto</td>       
+            <td class="p-3 border" width="150">Categoria Producto</td>
         </tr>
     </table>
     <?php
-
 // Browse and Show the products records
   while($row=$result->fetch_assoc()){?>
     <table>
@@ -148,4 +145,5 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous ">
     </script>
 </body>
+
 </html>
