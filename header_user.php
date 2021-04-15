@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/6234b7c045.js"></script>
     <link href="css/style.css" rel="stylesheet">
     <title> Reposteria Online Creativa</title>
 </head>
@@ -24,12 +25,11 @@
             <p class="lead">Reposteria creativa, personalizada, cup cakes y galletas de diseño exclusivo</p>
         </div>
     </div>
-
     <!-- Navigation Bar -->
-
     <div class="row d-flex flex-column ml-0 mr-2 px-1">
         <div class="page-content col-8-sm col-9-md">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-5">
+                <div class="text-primary">Enhorabuena, ya has iniciado la sesión! </div>
                 <div class="mb-2" id="logo">
                     <a href="index.php">
                         <img src="img/logo.jpg" width="70px" height="70px" alt="logo">
@@ -66,7 +66,6 @@
                             </div>
                         </li>
                 </div>
-
                 <div class="col-4-sm col-3-md d-flex flex-nowrap">
                     <!-- Search Button! -->
                     <form action="index.php" method="GET" id="searchForm">
@@ -195,11 +194,11 @@
                                         <h4 class="modal-title w-75 "> Formulario de Login</h4>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
-                                    <form action="login.php" method="post" id="loginForm"
+                                    <form action="login_admin.php" method="post" id="loginForm"
                                         onsubmit="return loginValidation()">
                                         <!-- Modal body -->
                                         <div class="modal-body">
-                                            <form method="post" action="login.php" id="loginForm" name="loginForm"
+                                            <form method="post" action="login_admin.php" id="loginForm" name="loginForm"
                                                 onsubmit="return loginValidation()">
                                                 <div class="modal-body mx-3">
 
@@ -207,30 +206,30 @@
                                                         <label for="emailLogin">Email</label>
                                                         <input type="email" name="emailLogin" id="emailLogin"
                                                             class="form-control validate" required>
-                                                        <div class="invalid-feedback" id="errorEmail"></div>
-                                                    </div>
-
-                                                    <div class="md-form mb-4">
-                                                        <label for="passwordLogin">Contraseña</label>
-                                                        <input type="password" name="passwordLogin" id="passwordLogin"
-                                                            class="form-control validate" required>
-                                                        <div class="invalid-feedback" id="errorPassword">
-                                                        </div>
+                                                        <div class=" invalid-feedback" id="errorEmail">
                                                     </div>
                                                 </div>
-                                            </form>
-                                            <!-- Modal footer -->
-                                            <div class="modal-footer d-flex justify-content-center">
-                                                <button type="submit" value="submit"
-                                                    class="btn btn-secondary">Login</button>
-                                            </div>
+
+                                                <div class="md-form mb-4">
+                                                    <label for="passwordLogin">Contraseña</label>
+                                                    <input type="password" name="passwordLogin" id="passwordLogin"
+                                                        class="form-control validate" required>
+                                                    <div class="invalid-feedback" id="errorPassword">
+                                                    </div>
+                                                </div>
                                         </div>
                                     </form>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer d-flex justify-content-center">
+                                        <button type="submit" value="submit" class="btn btn-secondary">Login</button>
+                                    </div>
                                 </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-                </ul>
-            </nav>
         </div>
+        </ul>
+        </nav>
+    </div>
