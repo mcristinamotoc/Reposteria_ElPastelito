@@ -20,7 +20,7 @@
  if($query= $mysqli->query($result)){   
  if ($result) {
     echo "<div style ='color: blue' <b> Your registration was successful!</b></div>";?>
-    <a href="user_session.php">Back</a><?php
+    <a href="index.php">Back</a><?php
 } else {
     echo "<div style ='color:red' <b>Something went wrong. Try again.</b> </div>";
     echo $mysqli->error; 

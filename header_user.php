@@ -194,11 +194,11 @@
                                         <h4 class="modal-title w-75 "> Formulario de Login</h4>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
-                                    <form action="login_admin.php" method="post" id="loginForm"
+                                    <form action="login.php" method="post" id="loginForm"
                                         onsubmit="return loginValidation()">
                                         <!-- Modal body -->
                                         <div class="modal-body">
-                                            <form method="post" action="login_admin.php" id="loginForm" name="loginForm"
+                                            <form method="post" action="login.php" id="loginForm" name="loginForm"
                                                 onsubmit="return loginValidation()">
                                                 <div class="modal-body mx-3">
 
