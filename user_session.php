@@ -1,5 +1,5 @@
 <!-- Including the database connection file -->
-<?php include("header.php"); ?>
+<?php include("header_user.php"); ?>
 
 <!-- Page Content -->
 <div class="container">
