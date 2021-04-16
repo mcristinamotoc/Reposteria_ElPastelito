@@ -1,5 +1,5 @@
-<!-- Including the database connection file -->
-<?php include("connection.php"); ?>
+<!-- Including the php send mail file -->
+<?php include("process.php"); ?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -44,11 +44,11 @@
                 </div>
                 <div class="form-group col-md-9 mx-5 text-info">
                     <label for="textarea">Mensaje</label>
-                    <textarea class="form-control" id="textarea" name="textarea" placeholder="Mensaje..."
+                    <textarea class="form-control" id=textarea name=textarea placeholder="Mensaje..."
                         required></textarea>
                 </div>
             </div>
-            <button type="submit" class="btn btn-info mx-5">Enviar</button>
+            <button type="submit" name ="submit" class="btn btn-info mx-5">Enviar</button>
         </form>
     </div>
 </div>

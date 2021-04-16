@@ -51,7 +51,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sobre Nosotros</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item text-info" href="about.php">¿Quienes somos?</a>
-                                <a class="dropdown-item text-info" href="#">Contacto</a>
+                                <a class="dropdown-item text-info" href="contact.php">Contacto</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
