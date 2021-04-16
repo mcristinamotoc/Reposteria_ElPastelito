@@ -1,4 +1,4 @@
-<!-- Including the database connection file -->
+<!-- Including the main header -->
 <?php include("header.php"); ?>
 
 <!-- Page Content -->
