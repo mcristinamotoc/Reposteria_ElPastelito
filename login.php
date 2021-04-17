@@ -1,4 +1,3 @@
-<!-- Including the database connection file -->
 <?php include("connection.php"); ?>
 <?php 
       

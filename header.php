@@ -65,6 +65,7 @@
                                 <a class="dropdown-item text-info" href="index.php?id_cat=4">Donuts</a>
                             </div>
                         </li>
+                    </ul>
                 </div>
 
                 <div class="col-4-sm col-3-md d-flex flex-nowrap">
@@ -231,6 +232,6 @@
                         </div>
                     </div>
                 </div>
-                </ul>
+              
             </nav>
         </div>

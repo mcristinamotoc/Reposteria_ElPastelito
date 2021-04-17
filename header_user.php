@@ -65,6 +65,7 @@
                                 <a class="dropdown-item text-info" href="index.php?id_cat=4">Donuts</a>
                             </div>
                         </li>
+                    </ul>
                 </div>
                 <div class="col-4-sm col-3-md d-flex flex-nowrap">
                     <!-- Search Button! -->
@@ -207,29 +208,30 @@
                                                         <input type="email" name="emailLogin" id="emailLogin"
                                                             class="form-control validate" required>
                                                         <div class=" invalid-feedback" id="errorEmail">
+                                                        </div>
                                                     </div>
-                                                </div>
 
-                                                <div class="md-form mb-4">
-                                                    <label for="passwordLogin">Contraseña</label>
-                                                    <input type="password" name="passwordLogin" id="passwordLogin"
-                                                        class="form-control validate" required>
-                                                    <div class="invalid-feedback" id="errorPassword">
+                                                    <div class="md-form mb-4">
+                                                        <label for="passwordLogin">Contraseña</label>
+                                                        <input type="password" name="passwordLogin" id="passwordLogin"
+                                                            class="form-control validate" required>
+                                                        <div class="invalid-feedback" id="errorPassword">
+                                                        </div>
                                                     </div>
                                                 </div>
+                                            </form>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer d-flex justify-content-center">
+                                                <button type="submit" value="submit"
+                                                    class="btn btn-secondary">Login</button>
+                                            </div>
                                         </div>
                                     </form>
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer d-flex justify-content-center">
-                                        <button type="submit" value="submit" class="btn btn-secondary">Login</button>
-                                    </div>
                                 </div>
-                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
+           
+            </nav>
         </div>
-        </ul>
-        </nav>
-    </div>

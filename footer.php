@@ -50,6 +50,7 @@
 <script src="javascript/loginValidation.js"></script>
 <script src="javascript/searchValidation.js"></script>
 <script src="javascript/registerValidation.js"></script>
+<script src="javascript/contactValidation.js"></script>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS and Font Awesome -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
