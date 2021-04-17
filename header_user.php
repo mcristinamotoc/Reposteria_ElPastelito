@@ -22,14 +22,14 @@
     <div class="jumbotron jumbotron-fluid text-center ">
         <div class="container" id="title">
             <h1 class="display-3 py-4">El Pastelito</h1>
-            <p class="lead">Reposteria creativa, personalizada, cup cakes y galletas de diseño exclusivo</p>
+            <p class="lead">Reposteria creativa, personalizada, cupcakes y galletas de diseño exclusivo</p>
         </div>
     </div>
     <!-- Navigation Bar -->
     <div class="row d-flex flex-column ml-0 mr-2 px-1">
         <div class="page-content col-8-sm col-9-md">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-5">
-                <div class="text-primary">Enhorabuena, ya has iniciado la sesión! </div>
+                <div class="text-primary"> Enhorabuena, ya has iniciado la sesión!</div>
                 <div class="mb-2" id="logo">
                     <a href="index.php">
                         <img src="img/logo.jpg" width="70px" height="70px" alt="logo">

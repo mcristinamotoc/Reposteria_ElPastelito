@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-3 ">
-            <h2 class="lead py-2">Categorias de productos</h2>
+            <h2 class="lead py-2 text-center text-info">Categorias de productos</h2>
             <div class="list-group">
                 <a href="index.php" class="list-group-item">Todos los productos</a>
 

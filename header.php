@@ -1,4 +1,3 @@
-<!-- Including the database connection file -->
 <?php include("connection.php"); ?>
 
 <!DOCTYPE html>
@@ -12,6 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/6234b7c045.js"></script>
     <link href="css/style.css" rel="stylesheet">
     <title> Reposteria Online Creativa</title>
 </head>
@@ -21,12 +21,11 @@
     <div class="jumbotron jumbotron-fluid text-center ">
         <div class="container" id="title">
             <h1 class="display-3 py-4">El Pastelito</h1>
-            <p class="lead">Reposteria creativa, personalizada, cup cakes y galletas de diseño exclusivo</p>
+            <h4 class="display-5">Reposteria creativa, personalizada, cupcakes y galletas de diseño exclusivo</h4>
         </div>
     </div>
 
     <!-- Navigation Bar -->
-
     <div class="row d-flex flex-column ml-0 mr-2 px-1">
         <div class="page-content col-8-sm col-9-md">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-5">
@@ -65,7 +64,6 @@
                                 <a class="dropdown-item text-info" href="index.php?id_cat=4">Donuts</a>
                             </div>
                         </li>
-                    </ul>
                 </div>
 
                 <div class="col-4-sm col-3-md d-flex flex-nowrap">
@@ -76,6 +74,7 @@
                             <input class="form-control" id="search" type="text" placeholder="Search..."
                                 aria-label="Search" aria-describedby="basic-addon2" required />
                             <button class="btn btn-info" id="searchBtn" type="submit">Search</button>
+                           
                         </div>
                     </form>
 
@@ -232,6 +231,6 @@
                         </div>
                     </div>
                 </div>
-              
+                </ul>
             </nav>
         </div>

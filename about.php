@@ -12,7 +12,7 @@
             <p class="card-text">Usamos los mejores ingredientes para nuestras elaboraciones y el sutil sabor
                 tradicional. Honestidad y sencillez es nuestro lema y lo que nos ayuda a destacarnos en el trabajo.
                 Nuestro deseo es expresar los sueños de nuestros clientes en una deliciosa tarta,
-                cupcake o galleta, y uestra meta es hacer muchos sueños realidad.</p>
+                cupcake o galleta, y nuestra meta es hacer muchos sueños realidad.</p>
             <p class="card-text"> Nuestro servicio es artesanal y personalizado. En El Pastelito realizamos con cada tarta
                 una pequeña obra de arte, llena de sabor y textura. Puedes encargar la tarta personalizada y original
                 que estás buscando para ese día especial y nos ocuparemos de llevarla a tu domicilio.</p>
