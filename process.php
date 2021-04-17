@@ -2,7 +2,6 @@
 <?php include("./connection.php"); ?>
 <?php
 
-
 	if (isset($_POST['submit'])){
 		$nombres=htmlentities($_POST['name']);
 		$email_cliente=htmlentities($_POST['email']);
@@ -24,7 +23,8 @@
 	$emailAdmin   = "mcristinamotoc@gmail.com";
 			
 	if (mail($emailAdmin,$subject,$message,$headers)){
-		echo "<div style ='color: blue' <b> Su mensaje ha sido enviado correctamente. Nos pondremos en contacto a la mayor brevedad posible.</b></div>";
+		echo "<div style ='color: blue'<b> Su mensaje ha sido enviado correctamente. Nos pondremos en contacto a la mayor brevedad posible.</b></div>";
+        ?> <a href="index.php">Back</a><?php
 
 	}	 else {
 		echo 'No se ha podido enviar el mensaje.';

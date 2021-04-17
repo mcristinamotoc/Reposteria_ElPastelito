@@ -14,25 +14,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title> Formulario Contacto</title>
 </head>
-<div class="holder mx-auto">
-    <h1 class="text-center text-info display-5 py-4 px-5 mx-5">Formulario de Contacto</h1>
-    <div class="container align-items-center ">
-        <form class="mb-5 mx-5" action="contact.php" method="post">
-            <div class="form-row">
-                <div class="form-group col-md-9 mx-5 text-info">
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <h1 class="text-center text-info mt-3">Formulario de Contacto</h1>
+    </div>
+    <div class="row justify-content-center align-items-center ">
+        <div class="col col-sm-9 col-md-9 col-lg-9 col-xl-6">
+            <form action="contact.php" method="post">
+                <div class="form-group  text-info">
                     <label for="name">Nombre</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Su nombre..." required>
                 </div>
-                <div class="form-group col-md-9 mx-5 text-info">
+                <div class="form-group  text-info">
                     <label for="email">Email</label>
                     <input type="text" class="form-control" id="email" name="email" placeholder="Su email..." required>
                 </div>
-                <div class="form-group col-md-9 mx-5 text-info">
+                <div class="form-group  text-info">
                     <label for="phone">Teléfono</label>
                     <input type="text" class="form-control" id="phone" name="phone" placeholder="Su teléfono..."
                         required>
                 </div>
-                <div class="form-group col-md-9 mx-5 text-info">
+                <div class="form-group  text-info">
                     <label for="subject">Asunto</label>
                     <select id="subject" class="form-control" name="subject" required>
                         <option selected>Escoge...</option>
@@ -42,30 +44,31 @@
                         <option value="4">Donuts</option>
                     </select>
                 </div>
-                <div class="form-group col-md-9 mx-5 text-info">
+                <div class="form-group text-info">
                     <label for="textarea">Mensaje</label>
                     <textarea class="form-control" id=textarea name=textarea placeholder="Mensaje..."
                         required></textarea>
                 </div>
-            </div>
-            <button type="submit" name ="submit" class="btn btn-info mx-5">Enviar</button>
-        </form>
+                <button type="submit" name="submit" class="col-3 btn btn-info btn-sm mb-3">Enviar</button>
+            </form>
+        </div>
     </div>
-</div>
 
-<!-- jQuery first, then Popper.js, then Bootstrap JS and Font Awesome -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous ">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous ">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous ">
-</script>
-<script src="https://use.fontawesome.com/6234b7c045.js"></script>
 
-</body>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS and Font Awesome -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous ">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous ">
+    </script>
+    <script src="https://use.fontawesome.com/6234b7c045.js"></script>
+
+    </body>
 
 </html>
 

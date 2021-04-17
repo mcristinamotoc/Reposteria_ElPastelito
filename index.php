@@ -47,7 +47,6 @@
                             </h4>
                             <h5><?php echo $row_prod['PRECIO']; ?>€</h5>
                             <p class="card-text"><?php echo $row_prod['DESCRIPCION']; ?></p>
-
                         </div>
                         <div class="card-footer">
                             <a class="btn btn-info"
