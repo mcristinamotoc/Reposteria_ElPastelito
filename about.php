@@ -2,9 +2,9 @@
 <?php include("header.php"); ?>
 
 <!-- About Us information  -->
-<div class="card my-2 text-center ">
+<div class="card my-2">
     <div class="card-body mx-3 my-1">
-        <h2 class="card-title display-5 text-info">¡Diseñamos la tarta de tus sueños!</h2>
+        <h2 class="card-title display-5 text-center text-info">¡Diseñamos la tarta de tus sueños!</h2>
             <p class="card-text">Somos un pequeño negocio familiar dedicado a la pastelería artesanal especializados en
                 tartas personalizadas en Barcelona.
                 Desde hace casi 10 años que surgió nuestra idea de plasmar los sueños de las personas en nuestras
@@ -16,7 +16,7 @@
             <p class="card-text"> Nuestro servicio es artesanal y personalizado. En El Pastelito realizamos con cada tarta
                 una pequeña obra de arte, llena de sabor y textura. Puedes encargar la tarta personalizada y original
                 que estás buscando para ese día especial y nos ocuparemos de llevarla a tu domicilio.</p>
-                <a href="#" class="btn btn-info">Contacto</a>
+                <a href="contact.php" class="btn btn-info">Contacto</a>
         </div>
     </div>
 </div>
