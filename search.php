@@ -1,3 +1,5 @@
+<!-- Including the database connection file -->
+<?php include("./connection.php"); ?>
 <!-- Including the main header -->
 <?php include("header.php"); ?>
 
@@ -5,12 +7,11 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-3 ">
-            <h2 class="lead py-2 text-center text-info ">Categorias de productos</h2>
+            <h2 class="lead py-2 text-center text-info">Categorias de productos</h2>
             <div class="list-group">
                 <a href="index.php" class="list-group-item">Todos los productos</a>
 
-                <?php $sql = "SELECT * FROM categorias"; 
-              
+                <?php $sql = "SELECT * FROM categorias";         
 			  $result = mysqli_query($mysqli, $sql);
 			  while ($row = mysqli_fetch_assoc($result))
 			  { ?>
@@ -20,38 +21,35 @@
                 <?php } ?>
             </div>
         </div> <!-- /.col-lg-3 -->
-
         <div class="col-lg-9 mb-2">
-
             <div class="row">
                 <?php
-    if(isset($_REQUEST['id_cat'])){
-        $sql_prod = "SELECT * FROM productos WHERE categoria_id=".$_REQUEST['id_cat']; 
+    if(isset($_REQUEST['submit'])){
+        $search= $_POST['search'];
+        $query = "SELECT * FROM `PRODUCTOS` WHERE `NOMBRE` LIKE '%$search%' or `DESCRIPCION` LIKE '%$search%' or `PRECIO` LIKE '%$search%'"; 
     }else{
-        $sql_prod = "SELECT * FROM productos"; 
-    }
-    
-    $resultado_prod = mysqli_query($mysqli, $sql_prod);
-    if(mysqli_num_rows($resultado_prod)>0)
+        $query = "SELECT * FROM productos"; 
+    }   
+    $result = mysqli_query($mysqli, $query);
+    if(mysqli_num_rows($result)>0)
     {
-        while ($row_prod = mysqli_fetch_assoc($resultado_prod))
+        while ($row = mysqli_fetch_assoc($result))
         {
         ?>
                 <div class="col-lg-4 col-md-6 my-4">
                     <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="./img/<?php echo $row_prod['URL_FOTO']; ?>"
-                                alt=""></a>
+                        <a href="#"><img class="card-img-top" src="./img/<?php echo $row['URL_FOTO']; ?>" alt=""></a>
                         <div class="card-body">
                             <h4 class="card-title">
-                                <a href="#"><?php echo $row_prod['NOMBRE']; ?></a>
+                                <a href="#"><?php echo $row['NOMBRE']; ?></a>
                             </h4>
-                            <h5><?php echo $row_prod['PRECIO']; ?>€</h5>
-                            <p class="card-text"><?php echo $row_prod['DESCRIPCION']; ?></p>
+                            <h5><?php echo $row['PRECIO']; ?>€</h5>
+                            <p class="card-text"><?php echo $row['DESCRIPCION']; ?></p>
+
                         </div>
                         <div class="card-footer">
                             <a class="btn btn-info"
-                                href="#"
-                                target="_blank">Comprar</a>
+                                href="#">Comprar</a>
                         </div>
                     </div>
                 </div>

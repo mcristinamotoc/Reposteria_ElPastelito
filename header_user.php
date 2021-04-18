@@ -22,7 +22,7 @@
     <div class="jumbotron jumbotron-fluid text-center ">
         <div class="container" id="title">
             <h1 class="display-3 py-4">El Pastelito</h1>
-            <p class="lead">Reposteria creativa, personalizada, cupcakes y galletas de diseño exclusivo</p>
+            <h4 class="display-5">Reposteria creativa, personalizada, cupcakes y galletas de diseño exclusivo</p>
         </div>
     </div>
     <!-- Navigation Bar -->
@@ -69,12 +69,13 @@
                 </div>
                 <div class="col-4-sm col-3-md d-flex flex-nowrap">
                     <!-- Search Button! -->
-                    <form action="index.php" method="GET" id="searchForm">
+                    <form action="search.php" method="POST" id="searchForm">
                         <div id="errorSearch"></div>
                         <div class="form form-inline flex-nowrap ">
-                            <input class="form-control" id="search" type="text" placeholder="Search..."
-                                aria-label="Search" aria-describedby="basic-addon2" required />
-                            <button class="btn btn-info" id="searchBtn" type="submit">Search</button>
+                            <input class="form-control" id="search" name="search"
+                                value="<?php echo isset($_POST['search']) ? $_POST['search']:''?>" type="text"
+                                placeholder="Search..." aria-label="Search" aria-describedby="basic-addon2" required />
+                            <button class="btn btn-info" id="searchBtn" name="submit" type="submit">Search</button>
                         </div>
                     </form>
 
@@ -232,6 +233,6 @@
                         </div>
                     </div>
                 </div>
-           
+
             </nav>
         </div>
