@@ -69,15 +69,16 @@
                 </div>
                 <div class="col-4-sm col-3-md d-flex flex-nowrap">
                     <!-- Search Button! -->
-                    <form action="search.php" method="POST" id="searchForm">
-                        <div id="errorSearch"></div>
+                    <form action="search.php" method="POST" id="searchForm">                
                         <div class="form form-inline flex-nowrap ">
                             <input class="form-control" id="search" name="search"
-                                value="<?php echo isset($_POST['search']) ? $_POST['search']:''?>" type="text"
+                                value="<?php echo isset($_POST['search']) ? $_POST['search'] : '' ?>" type="text"
                                 placeholder="Search..." aria-label="Search" aria-describedby="basic-addon2" required />
                             <button class="btn btn-info" id="searchBtn" name="submit" type="submit">Search</button>
                         </div>
+                        <div id="errorSearch"></div>
                     </form>
+
 
                     <!--Modal Register Form -->
                     <div class="form mx-2">

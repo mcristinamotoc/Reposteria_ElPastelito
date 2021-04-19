@@ -24,7 +24,6 @@
 			
 	if (mail($emailAdmin,$subject,$message,$headers)){
 		echo "<div style ='color: blue'<b> Su mensaje ha sido enviado correctamente. Nos pondremos en contacto a la mayor brevedad posible.</b></div>";
-        ?> <a href="index.php">Back</a><?php
 
 	}	 else {
 		echo 'No se ha podido enviar el mensaje.';

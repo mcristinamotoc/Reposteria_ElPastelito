@@ -45,6 +45,9 @@ a:hover  {
 .dropdown-item{
     padding-left:1rem;
 }
+#errorSearch{
+    color:red;
+}
 
 /* Footer */
 #footer{

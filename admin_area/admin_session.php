@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>LIST categoriaS</title>
+    <title>LIST Categorias</title>
 </head>
 
 <body>
+    <!-- Button Back to Main Page -->
     <form role="form" method="post" action="../index.php">
         <input name="action" type="hidden" value="New">
         <button name="id" type="submit" class="btn btn-info mx-5 my-3">Back to Main Page</button>

@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer id="footer" class="py-2 px-2 bg-info text-white h-100">
+<footer id="footer" class="py-2 bg-info text-white h-100">
     <!-- Grid container -->
     <div class="container mx-auto">
         <!--Grid row-->

@@ -26,7 +26,7 @@
     </div>
 
     <!-- Navigation Bar -->
-    <div class="row d-flex flex-column ml-0 mr-2 px-1">
+    <div class="row d-flex flex-column ml-0 mr-2 mt-3 px-1">
         <div class="page-content col-8-sm col-9-md">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-5">
                 <div class="mb-2" id="logo">
@@ -66,18 +66,20 @@
                         </li>
                 </div>
 
-                <div class="col-4-sm col-3-md d-flex flex-nowrap">
+                <div class="col-4-sm col-3-md d-flex flex-nowrap mt-2">
                     <!-- Search Button! -->
                     <form action="search.php" method="POST" id="searchForm">
-                        <div id="errorSearch"></div>
+                        
                         <div class="form form-inline flex-nowrap ">
                             <input class="form-control" id="search" name="search"
                                 value="<?php echo isset($_POST['search']) ? $_POST['search'] : '' ?>" type="text"
                                 placeholder="Search..." aria-label="Search" aria-describedby="basic-addon2" required />
                             <button class="btn btn-info" id="searchBtn" name="submit" type="submit">Search</button>
-
                         </div>
+                        <div id="errorSearch"></div>
                     </form>
+
+
 
                     <!--Modal Register Form -->
                     <div class="form mx-2">
@@ -231,6 +233,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
                 </ul>
             </nav>
