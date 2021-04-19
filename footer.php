@@ -51,6 +51,7 @@
     </div>
 </footer>
 
+<!-- Including JS validations files -->
 <script src="javascript/loginValidation.js"></script>
 <script src="javascript/searchValidation.js"></script>
 <script src="javascript/registerValidation.js"></script>

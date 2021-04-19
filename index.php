@@ -50,8 +50,8 @@
                         </div>
                         <div class="card-footer">
                             <a class="btn btn-info"
-                                href="#"
-                                target="_blank">Comprar</a>
+                                href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mcristinamotoc@gmail.com=ES&button_subtype=services&lc=ES&item_name=<?php echo $row['NOMBRE']; ?>&amount=<?php echo $row['PRECIO']; ?>&currency_code=EUR&bn=PP%2dBuyNowBF%3abtn_cart_LG%2egif%3aNonHosted">Comprar
+                                Ahora</a>
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
         }
     }else{ ?>
                 <div class="col-sm-12">
-                    <h2 class = "text-center text-info">No hay productos en esta categoría</h2>
+                    <h2 class="text-center text-info">No hay productos en esta categoría</h2>
                 </div>
                 <?php
     }
