@@ -15,11 +15,17 @@
 </head>
 
 <body>
+    <form role="form" method="post" action="../index.php">
+        <input name="action" type="hidden" value="New">
+        <button name="id" type="submit" class="btn btn-info mx-5 my-3">Back to Main Page</button>
+    </form>
+
     <!-- Admin options to edit product categories  -->
     <!-- Title Category -->
     <div class="jumbotron text-center p-3 my-3 mx-5 border">
         <h2 class="text-info">Listado Categorias</h2>
     </div>
+
 
     <!-- The button connects with the form to create a new category-->
     <form role="form" method="post" action="admin_category.php">

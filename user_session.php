@@ -49,7 +49,9 @@
 
                         </div>
                         <div class="card-footer">
-                            <a class="btn btn-info" href="#">Comprar</a>
+                            <a class="btn btn-info"
+                                href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mcristinamotoc@gmail.com=ES&button_subtype=services&lc=ES&item_name=<?php echo $row['NOMBRE']; ?>&amount=<?php echo $row['PRECIO']; ?>&currency_code=EUR&bn=PP%2dBuyNowBF%3abtn_cart_LG%2egif%3aNonHosted">Comprar
+                                Ahora</a>
                         </div>
                     </div>
                 </div>
