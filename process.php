@@ -7,6 +7,9 @@
 		$email_cliente=htmlentities($_POST['email']);
 		$telefono=htmlentities($_POST['phone']);
 		$subject=utf8_decode($_POST['subject']);
+		$rations=htmlentities($_POST['rations']);
+		$cake=htmlentities($_POST['cake']);
+		$cream=htmlentities($_POST['cream']);
 		$mensaje=htmlentities($_POST['textarea']);
 	
 	/* Recoger datos para la Función MAIL*/
@@ -15,6 +18,10 @@
 	$message .= '<p>Cliente: '.$nombres.'</p> ';
 	$message .= '<p>Email: '.$email_cliente.'</p> ';
 	$message .= '<p>Teléfono: '.$telefono.'</p> ';
+	$message .= '<p>Mensaje: '.$subject.'</p> ';
+	$message .= '<p>Mensaje: '.$rations.'</p> ';
+	$message .= '<p>Mensaje: '.$cake.'</p> ';
+	$message .= '<p>Mensaje: '.$cream.'</p> ';
 	$message .= '<p>Mensaje: '.$mensaje.'</p> ';
 
 	$headers = "MIME-Version: 1.0\r\n";
@@ -24,7 +31,14 @@
 			
 	if (mail($emailAdmin,$subject,$message,$headers)){
 		echo "<div style ='color: blue'<b> Su mensaje ha sido enviado correctamente. Nos pondremos en contacto a la mayor brevedad posible.</b></div>";
-
+		?>
+		<form role="form" method="post" action="./index.php">
+			<input name="action" type="hidden" value="New">
+			<button type="submit" style="color:#17a2b8; border-style: solid black; font-size: medium; padding-top:5px;">Back to Main
+				Page</button>
+		</form>
+		
+		<?php
 	}	 else {
 		echo 'No se ha podido enviar el mensaje.';
 	}

@@ -5,7 +5,7 @@
 
 <!-- Page Content -->
 <div class="container">
-    <div class="row">
+    <div class="row_prod">
         <div class="col-lg-3 ">
             <h2 class="lead py-2 text-center text-info">Categorias de productos</h2>
             <div class="list-group">
@@ -13,11 +13,11 @@
 
                 <?php $sql = "SELECT * FROM categorias";         
 			  $result = mysqli_query($mysqli, $sql);
-			  while ($row = mysqli_fetch_assoc($result))
+			  while ($row_prod = mysqli_fetch_assoc($result))
 			  { ?>
                 <!-- This line will be executed as many times as there are categories in the database. -->
-                <a href="index.php?id_cat=<?php echo $row['ID_CATEGORIA']; ?>"
-                    class="list-group-item"><?php echo $row['NOMBRE']; ?></a>
+                <a href="index.php?id_cat=<?php echo $row_prod['ID_CATEGORIA']; ?>"
+                    class="list-group-item"><?php echo $row_prod['NOMBRE']; ?></a>
                 <?php } ?>
             </div>
         </div> <!-- /.col-lg-3 -->
@@ -33,24 +33,23 @@
     $result = mysqli_query($mysqli, $query);
     if(mysqli_num_rows($result)>0)
     {
-        while ($row = mysqli_fetch_assoc($result))
+        while ($row_prod = mysqli_fetch_assoc($result))
         {
         ?>
                 <div class="col-lg-4 col-md-6 my-4">
                     <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="./img/<?php echo $row['URL_FOTO']; ?>" alt=""></a>
+                        <a href="#"><img class="card-img-top" src="./img/<?php echo $row_prod['URL_FOTO']; ?>" alt=""></a>
                         <div class="card-body">
                             <h4 class="card-title">
-                                <a href="#"><?php echo $row['NOMBRE']; ?></a>
+                                <a href="#"><?php echo $row_prod['NOMBRE']; ?></a>
                             </h4>
-                            <h5><?php echo $row['PRECIO']; ?>€</h5>
-                            <p class="card-text"><?php echo $row['DESCRIPCION']; ?></p>
-
+                            <h5><?php echo $row_prod['PRECIO']; ?>€</h5>
+                            <p class="card-text"><?php echo $row_prod['DESCRIPCION']; ?></p>
                         </div>
                         <div class="card-footer">
-                        <a class="btn btn-info"
-                                href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mcristinamotoc@gmail.com=ES&button_subtype=services&lc=ES&item_name=<?php echo $row['NOMBRE']; ?>&amount=<?php echo $row['PRECIO']; ?>&currency_code=EUR&bn=PP%2dBuyNowBF%3abtn_cart_LG%2egif%3aNonHosted">Comprar
-                                Ahora</a>
+                            <a class="btn btn-info"
+                                href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mcristinamotoc%40gmail%2ecom&lc=ES&item_name=<?php echo $row_prod['NOMBRE']; ?>&amount=<?php echo $row_prod['PRECIO']; ?>&currency_code=EUR&button_subtype=services&no_note=0&bn=PP%2dBuyNowBF%3abtn_buynowCC_LG%2egif%3aNonHostedGuest"
+                                target="_blank">Comprar Ahora</a>
                         </div>
                     </div>
                 </div>
@@ -58,17 +57,17 @@
         }
     }else{ ?>
                 <div class="col-sm-12">
-                    <h2 class = "text-center text-info">No hay productos en esta categoría</h2>
+                    <h2 class="text-center text-info">No hay productos en esta categoría</h2>
                 </div>
                 <?php
     }
     ?>
             </div>
-            <!-- /.row -->
+            <!-- /.row_prod -->
         </div>
         <!-- /.col-lg-9 -->
     </div>
-    <!-- /.row -->
+    <!-- /.row_prod -->
 </div>
 <!-- /.container -->
 

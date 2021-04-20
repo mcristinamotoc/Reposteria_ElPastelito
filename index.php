@@ -12,11 +12,11 @@
                 <?php $sql = "SELECT * FROM categorias"; 
               
 			  $result = mysqli_query($mysqli, $sql);
-			  while ($row = mysqli_fetch_assoc($result))
+			  while ($row_prod = mysqli_fetch_assoc($result))
 			  { ?>
                 <!-- This line will be executed as many times as there are categories in the database. -->
-                <a href="index.php?id_cat=<?php echo $row['ID_CATEGORIA']; ?>"
-                    class="list-group-item"><?php echo $row['NOMBRE']; ?></a>
+                <a href="index.php?id_cat=<?php echo $row_prod['ID_CATEGORIA']; ?>"
+                    class="list-group-item"><?php echo $row_prod['NOMBRE']; ?></a>
                 <?php } ?>
             </div>
         </div> <!-- /.col-lg-3 -->
@@ -50,8 +50,8 @@
                         </div>
                         <div class="card-footer">
                             <a class="btn btn-info"
-                                href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mcristinamotoc@gmail.com=ES&button_subtype=services&lc=ES&item_name=<?php echo $row['NOMBRE']; ?>&amount=<?php echo $row['PRECIO']; ?>&currency_code=EUR&bn=PP%2dBuyNowBF%3abtn_cart_LG%2egif%3aNonHosted">Comprar
-                                Ahora</a>
+                                href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mcristinamotoc%40gmail%2ecom&lc=ES&item_name=<?php echo $row_prod['NOMBRE']; ?>&amount=<?php echo $row_prod['PRECIO']; ?>&currency_code=EUR&button_subtype=services&no_note=0&bn=PP%2dBuyNowBF%3abtn_buynowCC_LG%2egif%3aNonHostedGuest"
+                                target="_blank">Comprar Ahora</a>
                         </div>
                     </div>
                 </div>

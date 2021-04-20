@@ -30,8 +30,8 @@
             <form action="contact.php" method="post" id="contactForm" onsubmit="return contactValidation()">
                 <div class="form-group text-info">
                     <label for="name">Nombre</label>
-                    <input type="text" class="form-control validate" id="name" name="name" placeholder="Su nombre..."
-                        required>
+                    <input type="text" class="form-control validate" id="name" name="name" pattern="^[a-zA-Z ]*$"
+                        placeholder="Su nombre..." required>
                     <div class="invalid-feedback" id="errorNombre"></div>
                 </div>
                 <div class="form-group  text-info">
@@ -46,7 +46,7 @@
                         placeholder="Su teléfono..." required>
                     <div class="invalid-feedback" id="errorPhone"></div>
                 </div>
-                <div class="form-group  text-info">
+                <div class="form-group text-info">
                     <label for="subject">Asunto</label>
                     <select id="subject" class="form-control validate" name="subject" required>
                         <option selected value=""></option>
@@ -56,6 +56,41 @@
                         <option value="4">Donuts</option>
                     </select>
                     <div class="invalid-feedback" id="errorSubject"></div>
+                </div>
+                <div class="form-group  text-info">
+                    <label for="rations">Número de Raciones</label>
+                    <input type="text" class="form-control validate" id="rations" name="rations" pattern="[0-9]"
+                        placeholder="Número de raciones..." required>
+                    <div class="invalid-feedback" id="errorRations"></div>
+                </div>
+                <div class="form-group text-info">
+                    <label for="cake">Masa Bizcocho</label>
+                    <select id="cake" class="form-control validate" name="cake" required>
+                        <option selected value=""></option>
+                        <option value="1">Chocolate</option>
+                        <option value="2">Carrot Cak</option>
+                        <option value="3">Red Velvet</option>
+                        <option value="4">Limón</option>
+                        <option value="5">Vainilla</option>
+                    </select>
+                    <div class="invalid-feedback" id="errorCake"></div>
+                </div>
+                <div class="form-group text-info">
+                    <label for="cream">Relleno Crema</label>
+                    <select id="cream" class="form-control validate" name="cream" required>
+                        <option selected value=""></option>
+                        <option value="1">Chocolate</option>
+                        <option value="2">Vainilla</option>
+                        <option value="3">Dulce de Leche</option>
+                        <option value="4">Nata</option>
+                        <option value="5">Limón</option>
+                        <option value="6">Fresas</option>
+                        <option value="7">Fondant</option>
+                        <option value="8">Sin Azúcar</option>
+                        <option value="9">Gluten Free</option>
+                        <option value="10">Vegan</option>
+                    </select>
+                    <div class="invalid-feedback" id="errorCake"></div>
                 </div>
                 <div class="form-group text-info">
                     <label for="textarea">Mensaje</label>
