@@ -43,7 +43,7 @@
                                 alt=""></a>
                         <div class="card-body">
                             <h4 class="card-title">
-                                <a href="#"><?php echo $row_prod['NOMBRE']; ?></a>
+                                <a href="contact.php"><?php echo $row_prod['NOMBRE']; ?></a>
                             </h4>
                             <h5><?php echo $row_prod['PRECIO']; ?>€</h5>
                             <p class="card-text"><?php echo $row_prod['DESCRIPCION']; ?></p>
