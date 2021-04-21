@@ -59,7 +59,7 @@
                 </div>
                 <div class="form-group  text-info">
                     <label for="rations">Número de Raciones</label>
-                    <input type="text" class="form-control validate" id="rations" name="rations" pattern="[0-9]"
+                    <input type="text" class="form-control validate" id="rations" name="rations"
                         placeholder="Número de raciones..." required>
                     <div class="invalid-feedback" id="errorRations"></div>
                 </div>

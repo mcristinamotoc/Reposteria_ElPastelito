@@ -31,14 +31,6 @@
 			
 	if (mail($emailAdmin,$subject,$message,$headers)){
 		echo "<div style ='color: blue'<b> Su mensaje ha sido enviado correctamente. Nos pondremos en contacto a la mayor brevedad posible.</b></div>";
-		?>
-		<form role="form" method="post" action="./index.php">
-			<input name="action" type="hidden" value="New">
-			<button type="submit" style="color:#17a2b8; border-style: solid black; font-size: medium; padding-top:5px;">Back to Main
-				Page</button>
-		</form>
-		
-		<?php
 	}	 else {
 		echo 'No se ha podido enviar el mensaje.';
 	}
