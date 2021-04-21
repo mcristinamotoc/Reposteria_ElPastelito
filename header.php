@@ -6,27 +6,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="El Pastelito Barcelona. Reposteria Online Creativa y Personalizada.">
+    <meta name="author" content="@El Pastelito">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/6234b7c045.js"></script>
     <link href="css/style.css" rel="stylesheet">
-    <title> Reposteria Online Creativa</title>
+    <title> El Pastelito Barcelona. Reposteria Online Creativa y Personalizada.</title>
 </head>
 
 <body>
     <!-- Title -->
     <div class="jumbotron jumbotron-fluid text-center ">
-        <div class="container" id="title">
+        <div class="container mx-auto" id="title" >
             <h1 class="display-3 py-4">El Pastelito</h1>
             <h4 class="display-5">Reposteria creativa, personalizada, cupcakes y galletas de diseño exclusivo</h4>
         </div>
     </div>
 
     <!-- Navigation Bar -->
-    <div class="row d-flex flex-column ml-0 mr-2 mt-3 px-1">
+    <div class="row d-flex flex-column ml-0  mt-3 px-1">
         <div class="page-content col-8-sm col-9-md">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-5">
                 <div class="mb-2" id="logo">

@@ -2,7 +2,7 @@
 <?php include("header_user.php"); ?>
 
 <!-- Page Content -->
-<div class="container">
+
     <div class="row">
         <div class="col-lg-3 ">
             <h2 class="lead py-2 text-center text-info">Categorias de productos</h2>
@@ -70,7 +70,5 @@
         <!-- /.col-lg-9 -->
     </div>
     <!-- /.row -->
-</div>
-<!-- /.container -->
 
 <?php include("footer.php"); ?>

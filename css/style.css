@@ -15,7 +15,7 @@
 }
 .jumbotron {
     border-radius: 10px;
-    background: url("http://localhost/reposteria_online_code/img/shop.jpg");
+    background-image: url("../img/shop.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
