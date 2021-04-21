@@ -13,15 +13,15 @@
 		$mensaje=htmlentities($_POST['textarea']);
 	
 	/* Recoger datos para la Función MAIL*/
-	$message = '';
+	$message = 'Nuevo Email El pastelito';
 	$message .= '<p>Hola, ha sido registrado un nuevo mensaje desde el formulario de contacto del sitio web, según el detalle siguiente:</p> ';
 	$message .= '<p>Cliente: '.$nombres.'</p> ';
 	$message .= '<p>Email: '.$email_cliente.'</p> ';
 	$message .= '<p>Teléfono: '.$telefono.'</p> ';
-	$message .= '<p>Mensaje: '.$subject.'</p> ';
-	$message .= '<p>Mensaje: '.$rations.'</p> ';
-	$message .= '<p>Mensaje: '.$cake.'</p> ';
-	$message .= '<p>Mensaje: '.$cream.'</p> ';
+	$message .= '<p>Asunto: '.$subject.'</p> ';
+	$message .= '<p>Número de raciones: '.$rations.'</p> ';
+	$message .= '<p>Masa Bizcocho: '.$cake.'</p> ';
+	$message .= '<p>Relleno Crema: '.$cream.'</p> ';
 	$message .= '<p>Mensaje: '.$mensaje.'</p> ';
 
 	$headers = "MIME-Version: 1.0\r\n";
