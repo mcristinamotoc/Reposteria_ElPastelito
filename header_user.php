@@ -25,7 +25,7 @@
         </div>
     </div>
     <!-- Navigation Bar -->
-    <div class="row d-flex flex-column ml-0 mr-2 px-1">
+    <div class="row d-flex flex-column ml-0 mr-2 mb-0 px-1">
         <div class="page-content col-8-sm col-9-md">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-5">
                 <div>
@@ -212,3 +212,4 @@
                 </div>
             </nav>
         </div>
+    </div>

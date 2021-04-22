@@ -3,8 +3,8 @@
 
 <!-- Page Content -->
 
-    <div class="row ">
-        <div class="col-lg-3 ">
+    <div class="row mx-auto">
+        <div class="col-lg-3 mt-2">
             <h2 class="lead py-2 text-center text-info ">Categorias de productos</h2>
             <div class="list-group">
                 <a href="index.php" class="list-group-item">Todos los productos</a>
@@ -21,7 +21,7 @@
             </div>
         </div> <!-- /.col-lg-3 -->
 
-        <div class="col-lg-9 mb-2">
+        <div class="col-lg-9 mb-2 ">
 
             <div class="row">
                 <?php
@@ -37,7 +37,7 @@
         while ($row_prod = mysqli_fetch_assoc($resultado_prod))
         {
         ?>
-                <div class="col-lg-4 col-md-6 my-4">
+                <div class="col-lg-4 col-md-6 my-2">
                     <div class="card h-100">
                         <a href="#"><img class="card-img-top" src="./img/<?php echo $row_prod['URL_FOTO']; ?>"
                                 alt=""></a>

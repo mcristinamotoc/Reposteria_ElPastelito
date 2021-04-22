@@ -4,8 +4,8 @@
 <?php include("header.php"); ?>
 
 <!-- Page Content -->
-<div class="container">
-    <div class="row">
+
+    <div class="row mx-auto">
         <div class="col-lg-3 ">
             <h2 class="lead py-2 text-center text-info">Categorias de productos</h2>
             <div class="list-group">
@@ -36,7 +36,7 @@
         while ($row = mysqli_fetch_assoc($result))
         {
         ?>
-                <div class="col-lg-4 col-md-6 my-4">
+                <div class="col-lg-4 col-md-6 my-2">
                     <div class="card h-100">
                         <a href="#"><img class="card-img-top" src="./img/<?php echo $row['URL_FOTO']; ?>" alt=""></a>
                         <div class="card-body">
@@ -68,7 +68,4 @@
         <!-- /.col-lg-9 -->
     </div>
     <!-- /.row -->
-</div>
-<!-- /.container -->
-
 <?php include("footer.php"); ?>
