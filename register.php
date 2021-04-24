@@ -19,14 +19,10 @@
 
  if($query= $mysqli->query($result)){   
  if ($result) {
-    echo "<div style ='color: blue' <b> Your registration was successful!</b></div>";?>
-<form role="form" method="post" action="./index.php">
-    <input name="action" type="hidden" value="New">
-    <button type="submit" style="color:#17a2b8; border-style: solid black; font-size: medium; padding-top:5px;">Back to Main
-        Page</button>
-</form>
+    echo "<div style ='color: blue' <b> Your registration was successful!</b></div>";
+header ("Location:user_session.php"); 
 
-<?php
+
 } else {
     echo "<div style ='color:red' <b>Something went wrong. Try again.</b> </div>";
     echo $mysqli->error; 

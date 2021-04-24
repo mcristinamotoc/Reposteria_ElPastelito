@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 19-04-2021 a las 11:14:19
+-- Tiempo de generación: 22-04-2021 a las 10:36:16
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.2
 
@@ -93,13 +93,12 @@ INSERT INTO `PRODUCTOS` (`ID_PRODUCTO`, `NOMBRE`, `DESCRIPCION`, `PRECIO`, `URL_
 (7, 'Galletas Decoradas', 'Ya tenemos listos los nuevos modelos de impresiones comestibles para galletas de boda. \r\nVan personalizados,como siempre están disponibles en papel de azúcar, oblea y chocotransfer.\r\nEl precio puede variar en función de la opción escogida. \r\nUna docena. ', '22.00', 'cookie_decoration.jpg', 2),
 (8, 'Surtido Donuts', 'Buenos Ingredientes + Pasión + Conocimiento = Donuts Increíbles!\r\nUna docena de mini donuts. ', '14.00', 'pexels-donuts.jpg', 4),
 (9, 'Vegan Donuts', 'Nuestras donuts veganos son igual de buenos que los normales pero sin productos de origen animal. Aptos por gente con intolerancias a huevo o lácteos.\r\nUna docena de mini donuts. ', '16.00', 'donuts_varios.jpg', 4),
-(10, 'Tartas Personalizadas', 'Si todo sabor dulce es sinónimo de felicidad… ¿qué decir de las tartas personalizadas?\r\nEs cierto que las tartas fondant suelen protagonizar más bien eventos y ocasiones especiales, aunque a veces la mejor ocasión para regalar repostería artesana puede ser cualquier día.', '50.00€ - 90.00', 'cake-theme.jpg', 1),
+(10, 'Tartas Personalizadas', 'Si todo sabor dulce es sinónimo de felicidad… ¿qué decir de las tartas personalizadas?Es cierto que las tartas fondant suelen protagonizar más bien eventos y ocasiones especiales, aunque a veces la mejor ocasión para regalar repostería artesana puede ser cualquier día.', '90.00', 'cake-theme.jpg', 1),
 (11, 'Tarta Aniversario ', 'Nuestras tartas personalizadas son originales y deliciosas a la misma vez. Utilizamos ingredientes 100% naturales. \r\nEn nuestro amplio catálogo de pasteles decorados puedes encontrar tartas para toda clase de ocasiones. Pasteles para bodas, cumpleaños infantiles, bautizos, primera comunión, y empresas. ', '78.00', 'cake_valentine.jpg', 1),
 (12, 'Donuts Cumpleaños', 'Pack 12 unidades Sabores Variados.El sabor, diseño y colores de los donuts pueden variar, de acuerdo con la disponibilidad en el momento de la entrega.\r\nLa foto es indicativa. No se entregarán necesariamente, los mismos colores o sabores', '18.00', 'Donuts-cumpleaños-1.jpg', 4),
 (13, 'Tarta Chocolate Love', 'Esta tarta personalizada consta de un bizcocho base de chocolate, con una ganache 70% de cacao. Se trata de un postre elegante capaz de saciar las expectativas de los invitados más exigentes.\r\nEsta tarta y su decoración son personalizables para cumplir con las necesidades de cada evento. \r\n¡La felicidad está en un trozo de tarta!', '60.00', 'cake_chocolate.jpg', 1),
 (14, 'Tarta Cumpleaños', 'Un cumpleaños bien merece una tarta personalizada original y única. Se elaboran con fondant o crema de mantequilla con el diseño que más te guste y con el más delicioso bizcocho y relleno. Cualquier personalización es posible, de hacer el momento más dulce nos encargamos nosotros.\r\n\r\n', '75.00', 'cake_varios.jpg', 1),
-(15, 'Tarta Sin Azúcar', 'Tartas de ingredientes saludables y opciones veganas. Encuéntralas de espelta, de avena, integrales, con fibra, de chocolate, de avellanas.\r\nExiste la versión saludable sin edulcorantes añadidos y consiguiendo el mismo sabor. ¿Cómo? Recurriendo a alimentos con azúcar natural como son los dátiles o canela', '50.00', 'cake_NoSugar.jpg', 1),
-(2147483647, 'Prueba Paypal', 'Prueba Paypal a ver si funciona ', '0.50', '', 3);
+(15, 'Tarta Sin Azúcar', 'Tartas de ingredientes saludables y opciones veganas. Encuéntralas de espelta, de avena, integrales, con fibra, de chocolate, de avellanas.\r\nExiste la versión saludable sin edulcorantes añadidos y consiguiendo el mismo sabor. ¿Cómo? Recurriendo a alimentos con azúcar natural como son los dátiles o canela', '50.00', 'cake_NoSugar.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -119,13 +118,6 @@ CREATE TABLE `USUARIO` (
   `PROVINCIA` varchar(20) NOT NULL,
   `TELEFONO` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `USUARIO`
---
-
-INSERT INTO `USUARIO` (`ID_USUARIO`, `EMAIL`, `PASSWORD`, `PASSWORD2`, `NOMBRE_COMPLETO`, `DIRECCION`, `CODIGO_POSTAL`, `CIUDAD`, `PROVINCIA`, `TELEFONO`) VALUES
-(17, 'jian@gmgm.com', '123', '123', 'Jhen', 'C/ SANTS, Nº 1, 3º-2ª', 8019, 'Barcelona', 'Barcelona', 687677089);
 
 --
 -- Índices para tablas volcadas
@@ -182,7 +174,7 @@ ALTER TABLE `PRODUCTOS`
 -- AUTO_INCREMENT de la tabla `USUARIO`
 --
 ALTER TABLE `USUARIO`
-  MODIFY `ID_USUARIO` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `ID_USUARIO` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- Restricciones para tablas volcadas

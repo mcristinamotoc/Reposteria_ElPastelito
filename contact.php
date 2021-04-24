@@ -17,11 +17,6 @@
 
 <body>
     <div class="container">
-        <!-- Button Back to Main Page -->
-        <form role="form" method="post" action="./index.php">
-            <input name="action" type="hidden" value="New">
-            <button name="id" type="submit" class="btn btn-info mx-5 my-3">Back to Main Page</button>
-        </form>
         <!-- Title -->
         <div class="row justify-content-center align-items-center">
             <h1 class="text-center text-info mt-3">Formulario de Contacto</h1>
