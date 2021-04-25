@@ -58,7 +58,7 @@ function createFormProducts(){?>
             <input type="hidden" name="function_name" value="create_products">
             <div class="form-group">
                 <label for="id">Id:</label>
-                <input type="text" class="form-control" placeholder="Enter id" name="id" required>
+                <input type="text" class="form-control" placeholder="Enter id" name="id" >
             </div>
             <div class="form-group">
                 <label for="name">Nombre:</label>
@@ -80,7 +80,7 @@ function createFormProducts(){?>
                 <label for="category">Categoria ID:</label>
                 <input type="text" class="form-control" placeholder="Enter category" name="category" required>
             </div>
-            <button type="submit" class="btn btn-info">Accept</button>
+            <button type="submit" class="btn btn-info">Guardar</button>
         </form>
     </div>
     <?php
@@ -89,10 +89,10 @@ function createFormProducts(){?>
 function modifyFormProducts(){
     $products = get_products($_POST['id']);?>
     <div class="container p-3 my-3 border">
-        <div class="text-info mx-5"> Modify register</div>
+        <div class="text-info mx-5"> Modificar Registro</div>
         <form action="functions_products.php" method="post">
             <input type="hidden" name="function_name" value="modify_products">
-            <input type="hidden" name="id" value="<?php echo $products['ID_PRODUCTO']?>"required>
+            <input type="hidden" name="id" value="<?php echo $products['ID_PRODUCTO']?>" required>
             <div class="form-group">
                 <label for="name">Nombre:</label>
                 <input type="text" class="form-control" name="name" value="<?php echo $products['NOMBRE']?>" required>
@@ -116,7 +116,7 @@ function modifyFormProducts(){
                 <input type="text" class="form-control" name="category" value="<?php echo $products['CATEGORIA_ID']?>"
                     required>
             </div>
-            <button type="submit" class="btn btn-info">Accept</button>
+            <button type="submit" class="btn btn-info">Guardar</button>
         </form>
     </div>
     <?php
@@ -127,8 +127,9 @@ function deleteFormProducts(){?>
     <form action="functions_products.php" method="post">
         <input type="hidden" name="function_name" value="delete_products">
         <input type="hidden" name="id" value="<?php echo $_POST['id']?>">
-        <label class="lead font-weight-bolder text-danger mx-5" for="isDeleteproducts">Delete products?</label>
-        <input class="btn btn-info" type="submit" value="YES">
+        <label class="lead font-weight-bolder text-danger mx-5" for="isDeleteproducts">¿Estás seguro de borrar la
+            categoria?</label>
+        <input class="btn btn-info" type="submit" value="SI">
         <a href="admin_session.php" class="btn btn-info mx-3" role="button">NO</a>
     </form>
     <?php
