@@ -62,15 +62,15 @@ function createFormProducts(){?>
             </div>
             <div class="form-group">
                 <label for="name">Nombre:</label>
-                <input type="text" class="form-control" placeholder="Enter name" name="name"required>
+                <input type="text" class="form-control" placeholder="Enter name" name="name" required>
             </div>
             <div class="form-group">
                 <label for="description">Descripción:</label>
-                <input type="text" class="form-control" placeholder="Enter description" name="description"required>
+                <input type="text" class="form-control" placeholder="Enter description" name="description" required>
             </div>
             <div class="form-group">
                 <label for="price">Precio:</label>
-                <input type="text" class="form-control" placeholder="Enter price" name="price"required>
+                <input type="text" class="form-control" placeholder="Enter price" name="price" required>
             </div>
             <div class="form-group">
                 <label for="picture">Url Foto:</label>
@@ -78,7 +78,7 @@ function createFormProducts(){?>
             </div>
             <div class="form-group">
                 <label for="category">Categoria ID:</label>
-                <input type="text" class="form-control" placeholder="Enter category" name="category"required>
+                <input type="text" class="form-control" placeholder="Enter category" name="category" required>
             </div>
             <button type="submit" class="btn btn-info">Accept</button>
         </form>
@@ -92,27 +92,29 @@ function modifyFormProducts(){
         <div class="text-info mx-5"> Modify register</div>
         <form action="functions_products.php" method="post">
             <input type="hidden" name="function_name" value="modify_products">
-            <input type="hidden" name="id" value="<?php echo $products['ID_PRODUCTO']?>">
+            <input type="hidden" name="id" value="<?php echo $products['ID_PRODUCTO']?>"required>
             <div class="form-group">
                 <label for="name">Nombre:</label>
-                <input type="text" class="form-control" name="name" value="<?php echo $products['NOMBRE']?>">
+                <input type="text" class="form-control" name="name" value="<?php echo $products['NOMBRE']?>" required>
             </div>
             <div class="form-group">
                 <label for="description">Descripción:</label>
-                <input type="text" class="form-control" name="description"
-                    value="<?php echo $products['DESCRIPCION']?>">
+                <input type="text" class="form-control" name="description" value="<?php echo $products['DESCRIPCION']?>"
+                    required>
             </div>
             <div class="form-group">
                 <label for="price">Precio:</label>
-                <input type="text" class="form-control" name="price" value="<?php echo $products['PRECIO']?>">
+                <input type="text" class="form-control" name="price" value="<?php echo $products['PRECIO']?>" required>
             </div>
             <div class="form-group">
                 <label for="picture">Url Foto:</label>
-                <input type="text" class="form-control" name="picture" value="<?php echo $products['URL_FOTO']?>">
+                <input type="text" class="form-control" name="picture" value="<?php echo $products['URL_FOTO']?>"
+                    required>
             </div>
             <div class="form-group">
                 <label for="category">Categoria ID:</label>
-                <input type="text" class="form-control" name="category" value="<?php echo $products['CATEGORIA_ID']?>">
+                <input type="text" class="form-control" name="category" value="<?php echo $products['CATEGORIA_ID']?>"
+                    required>
             </div>
             <button type="submit" class="btn btn-info">Accept</button>
         </form>

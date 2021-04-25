@@ -78,10 +78,10 @@ function modifyFormCategory(){
         <div class="text-info mx-5"> Modify register</div>
         <form action="functions_category.php" method="post">
             <input type="hidden" name="function_name" value="modify_category">
-            <input type="hidden" name="id" value="<?php echo $category['ID_CATEGORIA']?>">
+            <input type="hidden" name="id" value="<?php echo $category['ID_CATEGORIA']?>"required>
             <div class="form-group">
                 <label for="name">Nombre:</label>
-                <input type="text" class="form-control" name="name" value="<?php echo $category['NOMBRE']?>">
+                <input type="text" class="form-control" name="name" value="<?php echo $category['NOMBRE']?>" required>
             </div>
             <button type="submit" class="btn btn-info">Accept</button>
         </form>
