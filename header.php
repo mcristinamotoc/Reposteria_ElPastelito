@@ -30,7 +30,7 @@
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-5">
                 <div class="mb-2" id="logo">
                     <a href="index.php">
-                        <img src="img/logo.jpg" width="70px" height="70px" alt="logo">
+                        <img src="img/logo.jpg" width="72px" height="72px" alt="logo">
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,6 +1,6 @@
 <!-- The database connection file -->
 <?php
-require 'conn.php';
+require '../connection.php';
 
 //Switch cases choose functions
 if(isset($_POST["function_name"])){

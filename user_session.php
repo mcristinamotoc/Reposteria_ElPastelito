@@ -9,7 +9,7 @@
             <div class="list-group">
                 <a href="user_session.php" class="list-group-item">Todos los productos</a>
 
-                <?php $sql = "SELECT * FROM categorias";         
+                <?php $sql = "SELECT * FROM CATEGORIAS";         
 			  $result = mysqli_query($mysqli, $sql);
 			  while ($row = mysqli_fetch_assoc($result))
 			  { ?>
@@ -25,9 +25,9 @@
             <div class="row">
                 <?php
     if(isset($_REQUEST['id_cat'])){
-        $sql_prod = "SELECT * FROM productos WHERE categoria_id=".$_REQUEST['id_cat']; 
+        $sql_prod = "SELECT * FROM PRODUCTOS WHERE CATEGORIA_ID=".$_REQUEST['id_cat']; 
     }else{
-        $sql_prod = "SELECT * FROM productos"; 
+        $sql_prod = "SELECT * FROM PRODUCTOS"; 
     }
     
     $resultado_prod = mysqli_query($mysqli, $sql_prod);

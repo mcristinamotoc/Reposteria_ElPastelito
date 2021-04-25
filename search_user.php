@@ -9,14 +9,14 @@
         <div class="col-lg-3 ">
             <h2 class="lead py-2 text-center text-info">Categorias de productos</h2>
             <div class="list-group">
-                <a href="index.php" class="list-group-item">Todos los productos</a>
+                <a href="user_session.php" class="list-group-item">Todos los productos</a>
 
                 <?php $sql = "SELECT * FROM CATEGORIAS";         
 			  $result = mysqli_query($mysqli, $sql);
 			  while ($row = mysqli_fetch_assoc($result))
 			  { ?>
                 <!-- This line will be executed as many times as there are categories in the database. -->
-                <a href="index.php?id_cat=<?php echo $row['ID_CATEGORIA']; ?>"
+                <a href="user_session.php?id_cat=<?php echo $row['ID_CATEGORIA']; ?>"
                     class="list-group-item"><?php echo $row['NOMBRE']; ?></a>
                 <?php } ?>
             </div>
