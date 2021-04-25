@@ -60,11 +60,11 @@ function createFormCategory(){?>
             <input type="hidden" name="function_name" value="create_category">
             <div class="form-group">
                 <label for="id">Id:</label>
-                <input type="text" class="form-control" placeholder="Enter id" name="id">
+                <input type="text" class="form-control" placeholder="Enter id" name="id" required>
             </div>
             <div class="form-group">
                 <label for="name">Nombre:</label>
-                <input type="text" class="form-control" placeholder="Enter name" name="name">
+                <input type="text" class="form-control" placeholder="Enter name" name="name" required>
             </div>
             <button type="submit" class="btn btn-info">Accept</button>
         </form>

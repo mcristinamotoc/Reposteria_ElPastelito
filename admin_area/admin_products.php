@@ -58,27 +58,27 @@ function createFormProducts(){?>
             <input type="hidden" name="function_name" value="create_products">
             <div class="form-group">
                 <label for="id">Id:</label>
-                <input type="text" class="form-control" placeholder="Enter id" name="id">
+                <input type="text" class="form-control" placeholder="Enter id" name="id" required>
             </div>
             <div class="form-group">
                 <label for="name">Nombre:</label>
-                <input type="text" class="form-control" placeholder="Enter name" name="name">
+                <input type="text" class="form-control" placeholder="Enter name" name="name"required>
             </div>
             <div class="form-group">
                 <label for="description">Descripción:</label>
-                <input type="text" class="form-control" placeholder="Enter description" name="description">
+                <input type="text" class="form-control" placeholder="Enter description" name="description"required>
             </div>
             <div class="form-group">
                 <label for="price">Precio:</label>
-                <input type="text" class="form-control" placeholder="Enter price" name="price">
+                <input type="text" class="form-control" placeholder="Enter price" name="price"required>
             </div>
             <div class="form-group">
                 <label for="picture">Url Foto:</label>
-                <input type="text" class="form-control" placeholder="Enter picture" name="picture">
+                <input type="text" class="form-control" placeholder="Enter picture" name="picture">required
             </div>
             <div class="form-group">
                 <label for="category">Categoria ID:</label>
-                <input type="text" class="form-control" placeholder="Enter category" name="category">
+                <input type="text" class="form-control" placeholder="Enter category" name="category"required>
             </div>
             <button type="submit" class="btn btn-info">Accept</button>
         </form>

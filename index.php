@@ -43,15 +43,14 @@
                                 alt=""></a>
                         <div class="card-body">
                             <h4 class="card-title">
-                                <a href="contact.php"><?php echo $row_prod['NOMBRE']; ?></a>
+                                <div class ="text-info"><?php echo $row_prod['NOMBRE']; ?></div>
                             </h4>
                             <h5><?php echo $row_prod['PRECIO']; ?>€</h5>
                             <p class="card-text"><?php echo $row_prod['DESCRIPCION']; ?></p>
                         </div>
                         <div class="card-footer">
                             <a class="btn btn-info"
-                                href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mcristinamotoc%40gmail%2ecom&lc=ES&item_name=<?php echo $row_prod['NOMBRE']; ?>&amount=<?php echo $row_prod['PRECIO']; ?>&currency_code=EUR&button_subtype=services&no_note=0&bn=PP%2dBuyNowBF%3abtn_buynowCC_LG%2egif%3aNonHostedGuest"
-                                target="_blank">Comprar Ahora</a>
+                            href="contact.php">Más Información</a>
                         </div>
                     </div>
                 </div>
