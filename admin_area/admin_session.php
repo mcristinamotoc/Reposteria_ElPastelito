@@ -144,6 +144,78 @@
   }
 }      
 ?>
+
+   <!-----------------------------------------------------------------------------------
+       Admin options to edit Users List  -->
+    <!-- Title  Users-->
+    <div class="jumbotron text-center p-3 my-3 mx-5 border">
+        <h2 class="text-info">Listado Usuarios</h2>
+    </div>
+
+    <!-- The button connects with the form to create a new product.-->
+    <form role="form" method="post" action="admin_users.php">
+        <input type="hidden" name="action" value="New">
+        <button name="id" type="submit" class="btn btn-info mx-5 mb-4">Nuevo Usuario</button>
+    </form>
+
+    <?php
+    //Connect with database PRODUCTOS table
+    $result =mysqli_query($mysqli, " SELECT*FROM USUARIO; ");
+    //Error control
+    if(!$result){
+        echo "Error query:" . mysqli_error($mysqli);
+    }else{?>
+    <table class="table-responsive-sm table-info d-flex align-content-start my-2 mx-5">
+        <tr>
+            <td class="p-3 border" width="150">Email</td>
+            <td class="p-3 border" width="150">Nombre</td>
+            <td class="p-3 border" width="150">Dirección</td>
+            <td class="p-3 border" width="150">Codigo Postal</td>
+            <td class="p-3 border" width="150">Ciudad</td>
+            <td class="p-3 border" width="150">Provincia</td>
+            <td class="p-3 border" width="150">Telefono</td>
+        </tr>
+    </table>
+    <?php
+// Browse and Show the products records
+  while($row=$result->fetch_assoc()){?>
+    <table>
+        <tr>
+            <td>
+                <table class="table-responsive-sm d-flex justify-content-around my-2 pl-5 pr-2">
+                    <tr>
+                        <td class="p-2 border" width="150"><?php echo $row["EMAIL"]?></td>
+                        <td class="p-2 border" width="150"><?php echo $row["NOMBRE_COMPLETO"]?></td>
+                        <td class="p-2 border" width="150"><?php echo $row["DIRECCION"]?></td>
+                        <td class="p-2 border" width="150"><?php echo $row["CODIGO_POSTAL"]?></td>
+                        <td class="p-2 border" width="150"><?php echo $row["CIUDAD"]?></td>
+                        <td class="p-2 border" width="150"><?php echo $row["PROVINCIA"]?></td>
+                        <td class="p-2 border" width="150"><?php echo $row["TELEFONO"]?></td>
+                    </tr>
+                </table>
+            <td>
+                <!-- The button connects with the admin_products.php to modify a product information-->
+                <form method="post" action="admin_users.php">
+                    <input name="id" type="hidden" value="<?php echo $row ['ID_USUARIO']?>">
+                    <button name="action" value="Modify" type="submit" class="btn btn-info my-1">Modificar </button>
+                </form>
+            </td>
+            <!-- The button connects with the admin_products.php to delete a product -->
+            <td>
+                <form method="post" action="admin_users.php">
+                    <input name="id" type="hidden" value="<?php echo $row ['ID_USUARIO']?>">
+                    <button name="action" value="Delete" type="submit" class="btn btn-info my-1 mx-1">Borrar</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <?php
+  }
+}      
+?>
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
