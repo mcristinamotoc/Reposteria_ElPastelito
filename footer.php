@@ -25,10 +25,15 @@
             <!--Grid column 3-> Payment system information-->
             <div class="text-white col-lg-3 col-md-3 mb-2 mb-md-0">
                 <h5 class="text-uppercase">Sistema de Pago</h5>
-                <div><i class="fa fa-credit-card" aria-hidden="true"></i> Tarjetas credito </div>
-                <i class="fa fa-cc-visa" aria-hidden="true"></i>
-                <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
-                <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+                <div><a href="https://www.paypal.com/ni/webapps/mpp/what-is-paypal" class="text-white"><i
+                            class="fa fa-credit-card" aria-hidden="true"></i> Tarjetas credito </a> </div>
+
+                <a href="https://www.paypal.com/ni/webapps/mpp/what-is-paypal" class="text-white"><i
+                        class="fa fa-cc-visa" aria-hidden="true"></i></a>
+                <a href="https://www.paypal.com/ni/webapps/mpp/what-is-paypal" class="text-white"><i
+                        class="fa fa-cc-mastercard" aria-hidden="true"></i></a>
+                <a href="https://www.paypal.com/ni/webapps/mpp/what-is-paypal" class="text-white"><i
+                        class="fa fa-cc-paypal" aria-hidden="true"></i></a>
             </div>
             <!--Grid column 4 -> Link to Social Media-->
             <div class=" text-white col-lg-3 col-md-3 mb-2 mb-md-0">
