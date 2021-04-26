@@ -12,7 +12,7 @@
 		$cream=htmlentities($_POST['cream']);
 		$mensaje=htmlentities($_POST['textarea']);
 	
-	/* Recoger datos para la Función MAIL*/
+	/*Collect data for the MAIL Function */
 	$message = 'Nuevo Email El pastelito';
 	$message .= '<p>Hola, ha sido registrado un nuevo mensaje desde el formulario de contacto del sitio web, según el detalle siguiente:</p> ';
 	$message .= '<p>Cliente: '.$nombres.'</p> ';

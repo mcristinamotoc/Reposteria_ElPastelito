@@ -2,8 +2,8 @@
 <?php 
       
  //Variables
- $email=$_POST["emailLogin"];
- $password=$_POST["passwordLogin"];
+ $email=htmlentities($_POST['emailLogin']);
+ $password=htmlentities($_POST['passwordLogin']);
 
  //ADMIN Query
  $result="SELECT `EMAIL`, `PASSWORD` FROM `ADMIN` WHERE `EMAIL`='$email' AND `PASSWORD`='$password'";
