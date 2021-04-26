@@ -72,7 +72,7 @@
                         <div id="errorSearch"></div>
                     </form>
                     <div>
-                    <a class="btn btn-info" href="index.php">Logout</a>
+                    <a class="btn btn-info" href="logout.php">Logout</a>
                 </div>
                 </div>
             </nav>

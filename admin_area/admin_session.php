@@ -17,11 +17,10 @@
 </head>
 
 <body>
-    <!-- Button Back to Main Page -->
-    <form role="form" method="post" action="../index.php">
-        <input name="action" type="hidden" value="New">
-        <button name="id" type="submit" class="btn btn-info mx-5 my-3">Volver Pagina Principal</button>
-    </form>
+    <!-- Button Logout -->
+    <div>
+        <a class="btn btn-info mx-5 my-3" href="../logout.php">Logout</a>
+    </div>
 
     <!-- Admin options to edit product categories  -->
     <!-- Title Category -->
@@ -81,7 +80,8 @@
   }
 }     
 ?>
-    <!-- Admin options to edit Products List  -->
+    <!------------------------------------------------------------------------------
+        Admin options to edit Products List  -->
     <!-- Title  Products-->
     <div class="jumbotron text-center p-3 my-3 mx-5 border">
         <h2 class="text-info">Listado Productos</h2>
@@ -152,14 +152,14 @@
         <h2 class="text-info">Listado Usuarios</h2>
     </div>
 
-    <!-- The button connects with the form to create a new product.-->
+    <!-- The button connects with the form to create a new user.-->
     <form role="form" method="post" action="admin_users.php">
         <input type="hidden" name="action" value="New">
         <button name="id" type="submit" class="btn btn-info mx-5 mb-4">Nuevo Usuario</button>
     </form>
 
     <?php
-    //Connect with database PRODUCTOS table
+    //Connect with database USUARIO table
     $result =mysqli_query($mysqli, " SELECT*FROM USUARIO; ");
     //Error control
     if(!$result){
@@ -177,7 +177,7 @@
         </tr>
     </table>
     <?php
-// Browse and Show the products records
+// Browse and Show the users records
   while($row=$result->fetch_assoc()){?>
     <table>
         <tr>
@@ -194,13 +194,13 @@
                     </tr>
                 </table>
             <td>
-                <!-- The button connects with the admin_products.php to modify a product information-->
+                <!-- The button connects with the admin_users.php to modify a user information-->
                 <form method="post" action="admin_users.php">
                     <input name="id" type="hidden" value="<?php echo $row ['ID_USUARIO']?>">
                     <button name="action" value="Modify" type="submit" class="btn btn-info my-1">Modificar </button>
                 </form>
             </td>
-            <!-- The button connects with the admin_products.php to delete a product -->
+            <!-- The button connects with the admin_users.php to delete a product -->
             <td>
                 <form method="post" action="admin_users.php">
                     <input name="id" type="hidden" value="<?php echo $row ['ID_USUARIO']?>">
