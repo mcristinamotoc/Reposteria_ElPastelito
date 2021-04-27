@@ -2,7 +2,6 @@
 <?php include("header_user.php"); ?>
 
 <!-- Page Content -->
-
     <div class="row mx-auto">
         <div class="col-lg-3 mt-2">
             <h2 class="lead py-2 text-center text-info">Categorias de productos</h2>
@@ -21,7 +20,6 @@
         </div> <!-- /.col-lg-3 -->
 
         <div class="col-lg-9 mb-2">
-
             <div class="row">
                 <?php
     if(isset($_REQUEST['id_cat'])){
@@ -46,7 +44,6 @@
                             </h4>
                             <h5><?php echo $row_prod['PRECIO']; ?>€</h5>
                             <p class="card-text"><?php echo $row_prod['DESCRIPCION']; ?></p>
-
                         </div>
                         <div class="card-footer">
                         <a class="btn btn-info"
@@ -70,5 +67,4 @@
         <!-- /.col-lg-9 -->
     </div>
     <!-- /.row -->
-
 <?php include("footer.php"); ?>

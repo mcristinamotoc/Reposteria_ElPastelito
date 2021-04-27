@@ -23,7 +23,6 @@ function create_category(){
     $query .="'" . $_POST['id'] . "', ";
     $query .="'" . $_POST['name'] . "'); ";  
     $result = mysqli_query($mysqli, $query);
-
     if($result){
         echo "Categoria Añadida";?>
 <a href="admin_session.php"> LISTA CATEGORIAS </a>
@@ -34,7 +33,6 @@ function create_category(){
     //Closing connection database
 $mysqli->close();
 }
-
 //Function Modify category
 function modify_category(){
     global $mysqli;

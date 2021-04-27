@@ -27,7 +27,6 @@
                 <h5 class="text-uppercase">Sistema de Pago</h5>
                 <div><a href="https://www.paypal.com/ni/webapps/mpp/what-is-paypal" class="text-white"><i
                             class="fa fa-credit-card" aria-hidden="true"></i> Tarjetas credito </a> </div>
-
                 <a href="https://www.paypal.com/ni/webapps/mpp/what-is-paypal" class="text-white"><i
                         class="fa fa-cc-visa" aria-hidden="true"></i></a>
                 <a href="https://www.paypal.com/ni/webapps/mpp/what-is-paypal" class="text-white"><i
