@@ -21,11 +21,12 @@
         <div class="container mx-auto" id="title">
             <h1 class="display-3 py-4">El Pastelito</h1>
             <h4 class="display-5">Reposteria creativa, personalizada, cupcakes y galletas de diseño exclusivo</h4>
+            
         </div>
     </div>
 
     <!-- Navigation Bar -->
-    <div class="row d-flex flex-column ml-0  mt-3 px-1">
+    <div class="row  ml-0 mr-2 px-1">
         <div class="page-content col-8-sm col-9-md">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-5">
                 <div class="mb-2" id="logo">
@@ -41,6 +42,7 @@
                         <li class="nav-item ">
                             <a class="nav-link text-info" href="index.php">Inicio <span class="sr-only">(current)</span></a>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sobre Nosotros</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -48,14 +50,20 @@
                                 <a class="dropdown-item text-info" href="contact.php">Contacto</a>
                             </div>
                         </li>
+                        
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categoria
                                 Productos</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item text-info" href="index.php?id_cat=1">Tartas Personalizadas</a>
-                                <a class="dropdown-item text-info" href="index.php?id_cat=2">Galletas</a>
-                                <a class="dropdown-item text-info" href="index.php?id_cat=3">Cupcakes</a>
-                                <a class="dropdown-item text-info" href="index.php?id_cat=4">Donuts</a>
+                            <?php $sql = "SELECT * FROM CATEGORIAS"; 
+              
+			  $result = mysqli_query($mysqli, $sql);
+			  while ($row_prod = mysqli_fetch_assoc($result))
+			  { ?>
+                <!-- This line will be executed as many times as there are categories in the database. -->
+                <a href="index.php?id_cat=<?php echo $row_prod['ID_CATEGORIA']; ?>"
+                    class="list-group-item"><?php echo $row_prod['NOMBRE']; ?></a>
+                <?php } ?>
                             </div>
                         </li>
                 </div>

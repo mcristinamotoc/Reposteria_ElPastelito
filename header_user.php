@@ -49,15 +49,20 @@
                                 <a class="dropdown-item text-info" href="contact.php">Contacto</a>
                             </div>
                         </li>
+                        
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categoria
                                 Productos</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item text-info" href="user_session.php?id_cat=1">Tartas
-                                    Personalizadas</a>
-                                <a class="dropdown-item text-info" href="user_session.php?id_cat=2">Galletas</a>
-                                <a class="dropdown-item text-info" href="user_session.php?id_cat=3">Cupcakes</a>
-                                <a class="dropdown-item text-info" href="user_session.php?id_cat=4">Donuts</a>
+                            <?php $sql = "SELECT * FROM CATEGORIAS"; 
+              
+			  $result = mysqli_query($mysqli, $sql);
+			  while ($row_prod = mysqli_fetch_assoc($result))
+			  { ?>
+                <!-- This line will be executed as many times as there are categories in the database. -->
+                <a href="index.php?id_cat=<?php echo $row_prod['ID_CATEGORIA']; ?>"
+                    class="list-group-item"><?php echo $row_prod['NOMBRE']; ?></a>
+                <?php } ?>
                             </div>
                         </li>
                     </ul>
