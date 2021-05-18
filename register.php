@@ -12,7 +12,7 @@
  $zipCode=htmlentities($_POST["zipCode"]);
  $city=htmlentities($_POST["city"]);
  $provincia=htmlentities($_POST["provincia"]);
- $phone=$htmlentities($_POST["phoneRegister"]);
+ $phone=htmlentities($_POST["phoneRegister"]);
 
 
  //User and password query
