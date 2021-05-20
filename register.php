@@ -3,15 +3,16 @@
 <?php 
       
  //Variables
- $email=$_POST["emailRegister"];
- $password=$_POST["passwordRegister"];
- $password2=$_POST["passwordRegister2"];
- $name=$_POST["name"];
- $direction=$_POST["direction"];
- $zipCode=$_POST["zipCode"];
- $city=$_POST["city"];
- $provincia=$_POST["provincia"];
- $phone=$_POST["phoneRegister"];
+ 
+ $email=htmlentities($_POST["emailRegister"]);
+ $password=htmlentities($_POST["passwordRegister"]);
+ $password2=htmlentities($_POST["passwordRegister2"]);
+ $name=htmlentities($_POST["name"]);
+ $direction=htmlentities($_POST["direction"]);
+ $zipCode=htmlentities($_POST["zipCode"]);
+ $city=htmlentities($_POST["city"]);
+ $provincia=htmlentities($_POST["provincia"]);
+ $phone=htmlentities($_POST["phoneRegister"]);
 
 
  //User and password query

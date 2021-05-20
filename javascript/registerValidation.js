@@ -11,7 +11,6 @@ function registerValidation() {
     //Variables
     var errors = 0;
     registerForm.classList.remove('is-invalid');
-
     var nameRegister = document.getElementById("nameRegister");
     var emailRegister = document.getElementById("emailRegister");
     var passwordRegister = document.forms["registerForm"]["passwordRegister"];
@@ -24,7 +23,6 @@ function registerValidation() {
     var terms = document.forms["registerForm"]["terms"];
 
     //Condicionals 
-
     if (nameRegister.value == "") {
         nameRegister.classList.add('is-invalid');
         document.getElementById("errorNameRegister").textContent = "This field is required";
@@ -34,7 +32,6 @@ function registerValidation() {
         emailRegister.classList.add("is-invalid");
         document.getElementById("errorEmailRegister").textContent = "Invalid field, please fill up your email";
         errors++;
-
     }
     if (passwordRegister.value == "") {
         passwordRegister.classList.add("is-invalid");
@@ -77,21 +74,17 @@ function registerValidation() {
         document.getElementById("errorTerms").textContent = "You must accept the terms"
         errors++;
     }
-
     if (errors > 0) {
         return false;
     } else {
         return true;
     }
-
 }
 // Functions 
-
 function emailValidation(emailRegister) {
     var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(emailRegister) ? true : false;
 }
-
 function phoneValidation(phoneRegister){
     var regex=/(\+34|0034|34)?[ -]*(6|7)[ -]*([0-9][ -]*){8}/;
     return regex.test(phoneRegister)?true:false;

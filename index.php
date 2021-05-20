@@ -2,7 +2,6 @@
 <?php include("header.php"); ?>
 
 <!-- Page Content -->
-
     <div class="row mx-auto">
         <div class="col-lg-3 mt-2">
             <h2 class="lead py-2 text-center text-info ">Categorias de productos</h2>
