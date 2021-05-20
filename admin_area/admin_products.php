@@ -78,7 +78,12 @@ function createFormProducts(){?>
             </div>
             <div class="form-group">
                 <label for="category">Categoria ID:</label>
-                <input type="text" class="form-control" placeholder="Enter category" name="category" required>
+                <select name="category" class="form-control" placeholder="Enter category">
+                    <option value="1">Tartas Personalizadas</option>
+                    <option value="2">Galletas Creativas</option>
+                    <option value="3">Cupcakes</option>
+                    <option value="4">Donuts</option>
+                </select>
             </div>
             <button type="submit" class="btn btn-info">Guardar</button>
         </form>
@@ -113,8 +118,12 @@ function modifyFormProducts(){
             </div>
             <div class="form-group">
                 <label for="category">Categoria ID:</label>
-                <input type="text" class="form-control" name="category" value="<?php echo $products['CATEGORIA_ID']?>"
-                    required>
+                <select name="category" class="form-control" placeholder="Enter category">
+                    <option value="1">Tartas Personalizadas</option>
+                    <option value="2">Galletas Creativas</option>
+                    <option value="3">Cupcakes</option>
+                    <option value="4">Donuts</option>
+                </select>
             </div>
             <button type="submit" class="btn btn-info">Guardar</button>
         </form>
