@@ -19,7 +19,7 @@
 <!-- Button Back to Main Page -->
 <form role="form" method="post" action="./index.php">
         <input name="action" type="hidden" value="New">
-        <button name="id" type="submit" class="btn btn-info mx-5 my-3">Back to Main Page</button>
+        <button name="id" type="submit" class="btn btn-info mx-5 my-3">Volver</button>
     </form>
 
 <!-- About Us information  -->

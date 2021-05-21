@@ -74,15 +74,15 @@ function createFormProducts(){?>
             </div>
             <div class="form-group">
                 <label for="picture">Url Foto:</label>
-                <input type="text" class="form-control" placeholder="Enter picture" name="picture">required
+                <input type="text" class="form-control" placeholder="Enter picture" name="picture"required>
             </div>
-            <div class="form-group">
+           <div class="form-group">
                 <label for="category">Categoria ID:</label>
                 <select name="category" class="form-control" placeholder="Enter category">
-                    <option value="1">Tartas Personalizadas</option>
-                    <option value="2">Galletas Creativas</option>
-                    <option value="3">Cupcakes</option>
-                    <option value="4">Donuts</option>
+                    <option value="1">Tartas Cumpleaños</option>
+                    <option value="2">Tartas Personalizadas</option>
+                    <option value="3">Tartas Temáticas</option>
+                    <option value="4">Tarta Crema</option>
                 </select>
             </div>
             <button type="submit" class="btn btn-info">Guardar</button>

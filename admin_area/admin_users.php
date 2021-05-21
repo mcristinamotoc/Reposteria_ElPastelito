@@ -100,7 +100,7 @@ function modifyFormUsers(){
         <div class="text-info mx-5"> Modificar Registro</div>
         <form action="functions_users.php" method="post">
             <input type="hidden" name="function_name" value="modify_users">
-            <input type="hidden" name="id" value="<?php echo $users['ID_USUARIO']?>" required>
+            <input type="hidden" name="id" value="<?php echo $users['ID_USUARIO']?>" >
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="text" class="form-control" name="email" value="<?php echo $users['EMAIL']?>" required>
