@@ -47,7 +47,7 @@ function create_category(){
     <input name="action" type="hidden" value="New">
     <button name="id" type="submit" class="btn btn-info mx-5 my-3">Volver</button>
 </form>
-
+git 
 <?php
     }else{
         echo "Error query:" . mysqli_error($mysqli);
@@ -55,7 +55,6 @@ function create_category(){
     //Closing connection database
 $mysqli->close();
 }
-
 //Function Modify category
 function modify_category(){
     global $mysqli;
